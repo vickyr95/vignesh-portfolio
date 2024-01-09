@@ -1,23 +1,41 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import About from './components/About';
+import Contact from './components/Contact';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Projects from './components/Projects';
+import Service from './components/Service';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+  const bgClasses = darkMode ? 'bg-dark' : 'bg-light';
+  // useEffect(() => {
+  //   // Apply the 'dark' class to the body based on the darkMode state
+  //   document.body.classList.toggle('dark', darkMode);
+  // }, [darkMode]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // className={darkMode ? 'dark' : ''}
+    <div className={darkMode ? 'dark' : ''}>
+      <main
+        className={`${bgClasses} text-gray-900 dark:text-gray-100 bg-cover bg-center `}
+      >
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Home darkMode={darkMode} />
+        <About darkMode={darkMode} />
+        <Service />
+        <Projects />
+        <Contact />
+
+        {/* <section className=' min-h-screen'>
+        <Navbar />
+        <Home />
+        <About />
+        <Service />
+        <Projects />
+        <Contact />
+      </section> */}
+      </main>
     </div>
   );
 }
