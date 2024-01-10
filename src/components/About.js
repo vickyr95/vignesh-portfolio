@@ -24,7 +24,7 @@ const About = ({ darkMode }) => {
               </div>
             ) : null}
 
-            <p className='text-center py-2 text-lg leading-8 tracking-widest'>
+            <p className='text-center py-2  text-lg leading-2 md:leading-8 tracking-widest'>
               With a robust background as a{' '}
               <span className='text-teal-500 font-bold'>
                 Lead Robotics Engineer

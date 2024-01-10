@@ -6,7 +6,7 @@ const Service = () => {
   return (
     <div
       name='service'
-      className='mt-10  min-h-screen lg:mt-0  dark:text-gray-400'
+      className='mt-10  min-h-screen lg:mt-0 p-10 md:p-5 dark:text-gray-400'
     >
       <div>
         <h3 className='text-3xl lg:pb-5  text-center  font-bold tracking-widest'>
