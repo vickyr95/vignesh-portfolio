@@ -18,7 +18,7 @@ function App() {
     // className={darkMode ? 'dark' : ''}
     <div className={darkMode ? 'dark' : ''}>
       <main
-        className={`${bgClasses} text-black dark:text-gray-100 bg-cover bg-center md:px-10 `}
+        className={`${bgClasses} text-black dark:text-gray-100 bg-cover bg-center px-0 md:px-10 `}
       >
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} bg={bgClasses} />
         <Home darkMode={darkMode} />
