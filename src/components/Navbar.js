@@ -49,13 +49,16 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     { id: 1, name: 'Projects', to: 'projects', current: false },
   ];
   return (
-    <nav className='  lg:fixed top-0  py-4 px-20  mb-7 w-full dark:text-white text-gray-900  '>
-      <div className='flex justify-between items-center border-b rounded-md shadow-md dark:border-pink-300 dark:shadow-none'>
+    <nav className='  lg:fixed top-0  py-4 px-20  mb-7 w-full dark:text-white text-black  z-50'>
+      <div
+        className={` flex justify-between items-center border-b 
+        rounded-md shadow-md dark:border-pink-300 dark:shadow-none  `}
+      >
         <div className='flex  justify-between items-center w-11/12'>
           <div>
-            <h1 className='text-3xl font-ravi-prakash'>VR</h1>
+            <h1 className='text-3xl font-fuggles'>VR</h1>
           </div>
-          <div className='hidden md:flex space-x-10 font-poppins  dark:text-white'>
+          <div className='hidden md:flex space-x-5 font-poppins  dark:text-white'>
             {navItems.map((item) => {
               return (
                 <Link
@@ -63,8 +66,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                   to={item.to}
                   spy={true}
                   smooth={true}
-                  className='nav text-lg  cursor-pointer text-md dark:text-gray-100 text-gray-800
- hover:text-black dark:hover:text-pink-200'
+                  className='nav text-lg  cursor-pointer text-md dark:text-gray-100
+ hover:text-pink-900 dark:hover:text-pink-200  shadow-xl  rounded-2xl md:px-5 md:mb-1
+ '
                   aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
@@ -73,7 +77,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             })}
           </div>
         </div>
-        <div className='flex items-center justify-end w-3/12 space-x-10'>
+        <div className='flex items-center  justify-end w-3/12 space-x-10'>
           {!darkMode ? (
             <PiCloudMoon
               className='cursor-pointer  text-xl'
@@ -81,7 +85,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             />
           ) : (
             <LuCloudSun
-              className='cursor-pointer  text-xl'
+              className='cursor-pointer  text-xl '
               onClick={handleDarkMode}
             />
           )}
@@ -107,43 +111,44 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       </div>
       {/* Mobile menu */}
       <div
-        className={`  font-poppins mt-10 mobile-menu ${
+        className={`border-t  dark:border-none  rounded-2xl   shadow-2xl  font-poppins mt-10 mobile-menu ${
           menuVisible ? 'block' : 'hidden'
         }`}
       >
-        <Link
+        {/* <Link
           to='about'
           className=' cursor-pointer block py-3 ps-10 text-lg text-gray-800
  hover:text-black'
         >
           Home
-        </Link>
-        <Link
-          to='about'
-          className=' cursor-pointer block py-3 ps-10 text-lg text-gray-800
- hover:text-black'
-        >
-          About Me
-        </Link>
-
-        <Link
-          to='service'
-          className=' cursor-pointer block py-3 ps-10 text-lg text-gray-800
- hover:text-black'
-        >
-          Service
-        </Link>
-
-        <Link
-          to='projects'
-          className=' cursor-pointer block py-3 ps-10  text-lg text-gray-800 hover:text-black'
-        >
-          Projects
-        </Link>
-
+        </Link> */}
+        {navItems.map((item) => {
+          return (
+            <Link
+              key={item.id}
+              to={item.to}
+              spy={true}
+              smooth={true}
+              className=' text-center 
+              cursor-pointer block py-3  
+              text-lg text-gray-800 dark:text-gray-100
+               hover:text-pink-900
+               dark:hover:text-pink-300 
+               border-b rounded-2xl
+                border-gray-400 '
+              aria-current={item.current ? 'page' : undefined}
+            >
+              {item.name}
+            </Link>
+          );
+        })}
         <Link
           to='contact'
-          className=' cursor-pointer block py-3 ps-10 text-lg text-gray-800 hover:text-black'
+          className=' cursor-pointer block py-3 text-center text-lg text-gray-800 
+           dark:text-gray-100 hover:text-black
+           dark:hover:text-pink-300
+            border-b rounded-2xl
+           border-gray-400'
         >
           Contact
         </Link>

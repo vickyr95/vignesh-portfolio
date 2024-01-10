@@ -8,21 +8,22 @@ const About = ({ darkMode }) => {
   return (
     <div name='about' className='min-h-screen'>
       <div className='  mt-20'>
-        <h3 className='text-3xl lg:pb-10 text-center  font-bold tracking-widest'>
+        <h3 className='text-3xl lg:pb-10  text-center  font-bold tracking-widest'>
           ABOUT ME
         </h3>
         <div className='flex items-center md:flex-row flex-col '>
           <div>
             <img src={s1} alt='profile-pic' className='w-96 h-80 lg:ml-20' />
           </div>
-          <div className='flex-row items-center justify-between w-4/6 lg:pe-20  '>
+          <div className='flex-row  relative  items-center justify-between w-4/6 lg:pe-20'>
             {darkMode ? (
-              <div class='relative w-full max-w-lg '>
-                <div class='absolute top-20 right-0   w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob  '></div>
-                <div class='absolute top-40 left-5 w-72 h-72 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-1000'></div>
-                <div class='absolute top-60 left-0 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000'></div>
+              <div class='   w-full max-w-lg lg:ml-44  '>
+                <div class='absolute  top-20  -left-8  w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob'></div>
+                <div class='absolute  top-80 md:top-40 lg:top-10 md:left-96  w-72 h-72  bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000'></div>
+                <div class='absolute -bottom-8  md:left-60  w-72 h-72  bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000'></div>
               </div>
             ) : null}
+
             <p className='text-center py-2 text-lg leading-8 tracking-widest'>
               With a robust background as a{' '}
               <span className='text-teal-500 font-bold'>
@@ -36,6 +37,7 @@ const About = ({ darkMode }) => {
               <em>entrepreneurial journey,</em> spearheading the launch of a
               groundbreaking startup.
             </p>
+
             <p className='text-center py-2 text-lg leading-8 tracking-widest  '>
               My career has been a fusion of cutting-edge innovation and
               technological prowess. As a Lead Robotics Engineer, I've
@@ -52,7 +54,7 @@ const About = ({ darkMode }) => {
             </div>
           </div>
         </div>
-        <p></p>
+        {/* <p></p> */}
       </div>
     </div>
   );

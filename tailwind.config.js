@@ -12,7 +12,7 @@ module.exports = {
       fontFamily: {
         burtons: ['burtons', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
-        'ravi-prakash': ['Ravi Prakash', 'cursive'],
+
         fuggles: ['Fuggles', 'cursive'],
       },
     },

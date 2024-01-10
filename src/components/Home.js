@@ -30,8 +30,8 @@ const Home = ({ darkMode }) => {
       <div className='lg:pt-36 px-10 min-h-screen flex flex-col md:flex-row  justify-between w-full'>
         <div className='text-center p-10   md:pb-5 '>
           <div className=''>
-            <h2 className='text-4xl font-fuggles bg-gradient-to-r from-fuchsia-700 via-pink-900 to-indigo-950 dark:font-thin dark:text-3xl dark:text-gray-100  bg-clip-text text-transparent  py-2'>
-              <span className='font-fuggles text-lg text-black dark:text-gray-100'>
+            <h2 className='text-4xl font-fuggles bg-gradient-to-r from-fuchsia-700 via-pink-900 to-indigo-950  dark:text-gray-100  bg-clip-text text-transparent  py-2'>
+              <span className=' text-lg text-black dark:text-gray-100'>
                 Hai,{' '}
                 <span className='h-7'>
                   <PiHandWavingDuotone className='inline w-7 h-10 ' />
@@ -49,17 +49,19 @@ const Home = ({ darkMode }) => {
               prowess with an ardent passion and relentless enthusiasm.
             </p>
           </div>
-          <div className='text-2xl flex items-center justify-center text-gray-900 gap-16 py-5'>
-            <div>
-              <Link className='cursor-pointer rounded-full bg-gradient-to-r from-cyan-500 to-teal-500 px-7 py-2  flex items-center text-sm font-bold '>
+          <div className='text-2xl flex flex-col md:flex-row items-center justify-center text-gray-900 gap-16 py-5 '>
+            <div className=' md:ml-10'>
+              <Link className=' cursor-pointer rounded-full bg-gradient-to-r from-cyan-500 to-teal-500 px-7 py-2  flex items-center text-sm font-bold '>
                 <PiHandshakeDuotone className='w-7 h-7 mr-5' /> Let's Connect
                 <MdArrowRightAlt className='w-7 h-7' />
               </Link>
             </div>
-            <AiFillTwitterCircle className='dark:text-gray-100' />
-            <AiFillLinkedin className='dark:text-gray-100' />
-            <AiFillGithub className='dark:text-gray-100' />
-            <AiFillMail className='dark:text-gray-100' />
+            <div className=' flex items-center justify-center lg:gap-16 gap-10'>
+              <AiFillTwitterCircle className='dark:text-gray-100' />
+              <AiFillLinkedin className='dark:text-gray-100' />
+              <AiFillGithub className='dark:text-gray-100' />
+              <AiFillMail className='dark:text-gray-100' />
+            </div>
           </div>
         </div>
 
