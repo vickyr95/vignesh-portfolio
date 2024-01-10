@@ -27,8 +27,8 @@ const Home = ({ darkMode }) => {
         </div>
       ) : null}
 
-      <div className='lg:pt-36 px-10 min-h-screen flex flex-col md:flex-row  justify-between w-full'>
-        <div className='text-center p-5 md:p-10   md:pb-5 '>
+      <div className='lg:pt-36 px-2 md:px-10 min-h-screen flex flex-col md:flex-row  justify-between w-full'>
+        <div className='text-center p-0 md:p-10   md:pb-5 '>
           <div className=''>
             <h2 className='text-4xl font-fuggles bg-gradient-to-r from-fuchsia-700 via-pink-900 to-indigo-950  dark:text-gray-100  bg-clip-text text-transparent  py-2'>
               <span className=' text-lg text-black dark:text-gray-100'>
