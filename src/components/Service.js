@@ -6,7 +6,7 @@ const Service = ({ darkMode, BG, bgLight }) => {
   return (
     <div
       name='service'
-      className={`darkMode ? ${BG} : ' bg-cover bg-left mt-10  min-h-screen w-screen lg:mt-0  md:pt-20 dark:text-gray-400 `}
+      className={`darkMode ? ${BG} : '' bg-cover bg-left mt-10  min-h-screen w-screen lg:mt-0  md:pt-20 dark:text-gray-400 `}
     >
       <div>
         <h3 className='text-3xl lg:pb-5  text-center  font-bold tracking-widest'>
