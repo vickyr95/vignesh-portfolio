@@ -6,9 +6,19 @@
   .animation-delay-2000 {
     animation-delay: 2s;
   }
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
   .animation-delay-4000 {
     animation-delay: 4s;
   }
+  /* .home-background {
+    background-image: url('./assets/banner-bg.png')
+      url('./assets/banner-bg.png');
+    background-blend-mode: overlay;
+    opacity: 1;
+  } */
+
   .nav {
     @apply relative;
   }

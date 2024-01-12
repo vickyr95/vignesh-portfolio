@@ -49,7 +49,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     { id: 1, name: 'Projects', to: 'projects', current: false },
   ];
   return (
-    <nav className='  lg:fixed top-0  py-4 px-10 md:px-20  mb-7 w-full dark:text-white text-black  z-50'>
+    <nav className='  md:fixed top-0  py-4 px-10 md:px-5 lg:px-20 mb-0 md:mb-7 w-full dark:text-white text-black  z-50'>
       <div
         className={` flex justify-between items-center border-b 
         rounded-md shadow-md dark:border-pink-300 dark:shadow-none  `}

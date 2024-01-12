@@ -9,20 +9,23 @@ import Service from './components/Service';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-  const bgClasses = darkMode ? 'bg-dark' : 'bg-light';
+
+  const bgLight = !darkMode ? 'bg-light' : '';
+  const BG = darkMode ? 'bg-dark' : '';
   // useEffect(() => {
   //   // Apply the 'dark' class to the body based on the darkMode state
+  //   setLightMode(true);
   //   document.body.classList.toggle('dark', darkMode);
-  // }, [darkMode]);
+  // }, [darkMode, lightMode]);
   return (
     // className={darkMode ? 'dark' : ''}
-    <div className={darkMode ? 'dark' : ''}>
+    <div className={`${darkMode ? 'dark' : ''} overflow-x-hidden`}>
       <main
-        className={`${bgClasses} text-black dark:text-gray-100 bg-cover bg-center px-0 md:px-10 `}
+        className={`dark:bg-black ${bgLight} text-black dark:text-gray-100 bg-cover bg-center     px-0 lg:px-0 w-screen md:w-screen overflow-x-hidden`}
       >
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} bg={bgClasses} />
-        <Home darkMode={darkMode} />
-        <About darkMode={darkMode} />
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Home darkMode={darkMode} BG={BG} bgLight={bgLight} />
+        <About darkMode={darkMode} bgLight={bgLight} />
         <Service />
         <Projects />
         <Contact />

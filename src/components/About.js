@@ -3,19 +3,29 @@ import s1 from '../assets/dev-ed-wave.png';
 import { Link } from 'react-scroll';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { HiLightningBolt } from 'react-icons/hi';
+import Skills from './Skills';
+import Experience from './Experience';
 
-const About = ({ darkMode }) => {
+const About = ({ darkMode, BG, bgLight }) => {
   return (
-    <div name='about' className='min-h-screen'>
+    <div
+      name='about'
+      className={`dark:bg-black min-h-screen w-screen md:pt-0.5 `}
+    >
       <div className='  mt-20'>
-        <h3 className='text-3xl lg:pb-10  text-center  font-bold tracking-widest'>
-          ABOUT ME
+        <h3 className=' text-3xl lg:pb-10  text-center  font-bold tracking-widest'>
+          ABOUT ME{' '}
         </h3>
-        <div className='flex items-center md:flex-row flex-col '>
+
+        <div className='flex items-center md:flex-row flex-col md:mb-10'>
           <div>
-            <img src={s1} alt='profile-pic' className='w-96 h-80 lg:ml-20' />
+            <img
+              src={s1}
+              alt='profile-pic'
+              className='w-96 h-80 lg:ml-20 mb-20'
+            />
           </div>
-          <div className='flex-row  relative  items-center justify-between w-4/6 lg:pe-20'>
+          <div className='flex-row  relative  items-center justify-between w-4/6 lg:pe-20 '>
             {darkMode ? (
               <div class='   w-full max-w-lg lg:ml-44  '>
                 <div class='absolute  top-20  -left-8  w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob'></div>
@@ -46,15 +56,24 @@ const About = ({ darkMode }) => {
               and sophisticated software engineering.
             </p>
 
-            <div className=' flex items-center  lg:w-11/12 mt-10  '>
-              <Link className='text-md tracking-widest lg:w-3/12 lg:px-10 flex items-center justify-between cursor-pointer rounded-full bg-gradient-to-r from-cyan-500 to-teal-500 px-2 py-2  font-bold '>
+            <div className=' flex  items-center justify-between lg:w-11/12 mt-10  '>
+              <Link className='text-md tracking-widest lg:w-3/12 lg:px-10  flex items-center justify-between cursor-pointer rounded-full bg-gradient-to-r from-cyan-500 to-teal-500 px-2 py-2  font-bold '>
                 Projects
                 <MdOutlineKeyboardArrowRight className='w-7 h-7' />
               </Link>
             </div>
           </div>
         </div>
-        {/* <p></p> */}
+        <Skills />
+        {/* <div className=' flex flex-col md:flex-row  justify-between  my-20'>
+          <div className='w-1/2 text-center'>
+            <Skills />
+          </div>
+          <div className=' w-1/2 text-center mt-20 md:mt-0'>
+            <Experience />
+          </div>
+        </div> */}
+        <Experience />
       </div>
     </div>
   );

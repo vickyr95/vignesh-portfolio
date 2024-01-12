@@ -16,22 +16,24 @@ import {
 import { MdArrowRightAlt } from 'react-icons/md';
 import { Link } from 'react-scroll';
 
-const Home = ({ darkMode }) => {
+const Home = ({ darkMode, BG, bgLight }) => {
   return (
-    <div name='home' className=''>
+    <div name='home' className={`darkMode ? ${BG} :'' mt-0 min-h-screen`}>
       {darkMode ? (
         <div class='relative w-full max-w-lg '>
-          <div class='absolute top-20 right-0   w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob  '></div>
-          <div class='absolute top-40 left-5 w-72 h-72 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-1000'></div>
-          <div class='absolute top-60 left-0 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000'></div>
+          <div class='hidden sm:hidden md:block lg:block absolute -top-4 -left-10   w-72 h-48 bg-pink-700 rounded-full mix-blend-multiply filter blur-xl opacity-70   '></div>
+
+          <div class='absolute top-0 right-20   w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob  '></div>
+          <div class='absolute top-40 left-10 w-72 h-72 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-1000'></div>
+          <div class='absolute top-60 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000'></div>
         </div>
       ) : null}
 
-      <div className='lg:pt-36 px-2 md:px-10 min-h-screen flex flex-col md:flex-row  justify-between w-full'>
-        <div className='text-center p-0 md:p-10   md:pb-5 '>
+      <div className='pt-20 md:pt-36 lg:pt-36 px-2 lg:px-10 min-h-screen w-screen flex flex-col md:flex-row  justify-between '>
+        <div className='text-center p-0 lg:p-10    '>
           <div className=''>
-            <h2 className='text-4xl font-fuggles bg-gradient-to-r from-fuchsia-700 via-pink-900 to-indigo-950  dark:text-gray-100  bg-clip-text text-transparent  py-2'>
-              <span className=' text-lg text-black dark:text-gray-100'>
+            <h2 className='text-4xl font-fuggles bg-gradient-to-r from-fuchsia-700 via-pink-900 to-indigo-950 dark:text-orange-200  bg-clip-text text-transparent  py-2'>
+              <span className=' text-lg text-black dark:text-gray-100 '>
                 Hai,{' '}
                 <span className='h-7'>
                   <PiHandWavingDuotone className='inline w-7 h-10 ' />

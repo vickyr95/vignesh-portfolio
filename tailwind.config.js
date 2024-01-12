@@ -9,6 +9,10 @@ module.exports = {
         light: 'url("/src/assets/pngtree-image.jpg")', // Define light mode background image
         dark: 'url("/src/assets/banner-bg.png")', // Define dark mode background image
       },
+      homebg: {
+        homebgImage: 'url("/src/assets/pngtree-image.jpg")', // Define light mode background image
+        homebgImagedark: 'url("/src/assets/banner-bg.png")', // Define dark mode background image
+      },
       fontFamily: {
         burtons: ['burtons', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
