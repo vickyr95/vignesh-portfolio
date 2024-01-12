@@ -3,6 +3,7 @@ import design from '../assets/design.png';
 import code from '../assets/code.png';
 import consult from '../assets/consulting.png';
 const Service = ({ darkMode, BG, bgLight }) => {
+  console.log(BG);
   return (
     <div
       name='service'

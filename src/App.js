@@ -26,7 +26,7 @@ function App() {
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Home darkMode={darkMode} BG={BG} bgLight={bgLight} />
         <About darkMode={darkMode} bgLight={bgLight} />
-        <Service />
+        <Service darkMode={darkMode} BG={BG} bgLight={bgLight} />
         <Projects />
         <Contact />
 
