@@ -21,8 +21,6 @@ const Home = ({ darkMode, BG, bgLight }) => {
     <div name='home' className={`darkMode ? ${BG} :'' mt-0 min-h-screen`}>
       {darkMode ? (
         <div class='relative w-full max-w-lg '>
-          <div class='hidden sm:hidden md:block lg:block absolute -top-4 -left-10   w-72 h-48 bg-pink-700 rounded-full mix-blend-multiply filter blur-xl opacity-70   '></div>
-
           <div class='absolute top-0 right-20   w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob  '></div>
           <div class='absolute top-40 left-10 w-72 h-72 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-1000'></div>
           <div class='absolute top-60 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000'></div>
