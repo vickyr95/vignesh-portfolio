@@ -6,11 +6,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        light: 'url("/src/assets/pngtree-image.jpg")', // Define light mode background image
+        light: 'url("/src/assets/orangeGreen.png")', // Define light mode background image
         dark: 'url("/src/assets/banner-bg.png")', // Define dark mode background image
+        contact_light: 'url("/src/assets/illustration-dark.svg")',
+        contact_dark: 'url("/src/assets/contact-img.svg")',
       },
       homebg: {
-        homebgImage: 'url("/src/assets/pngtree-image.jpg")', // Define light mode background image
+        homebgImage: 'url("/src/assets/pngabstract.jpg")', // Define light mode background image
         homebgImagedark: 'url("/src/assets/banner-bg.png")', // Define dark mode background image
       },
       fontFamily: {

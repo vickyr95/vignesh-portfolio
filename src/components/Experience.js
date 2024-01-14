@@ -32,7 +32,7 @@ const experienceData = [
 ];
 const Experience = () => {
   return (
-    <section>
+    <section className=''>
       <h3 className=' text-2xl lg:pb-10  text-center  font-bold tracking-widest'>
         MyExperience
       </h3>
@@ -40,7 +40,7 @@ const Experience = () => {
         {experienceData.map((item, index) => (
           <VerticalTimelineElement
             key={index}
-            className='vertical-timeline-element--work dark:text-black'
+            className='vertical-timeline-element--work  dark:text-black'
             contentStyle={{
               background: '#f3f4f6',
               boxShadow: 'none',
@@ -58,7 +58,7 @@ const Experience = () => {
               fontSize: '1.5rem',
             }}
           >
-            <h3>{item.title}</h3>
+            <h3 className='font-bold'>{item.title}</h3>
             <p>{item.description}</p>
           </VerticalTimelineElement>
         ))}

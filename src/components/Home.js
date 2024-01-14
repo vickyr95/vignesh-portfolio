@@ -1,24 +1,21 @@
 import React from 'react';
 import simpleimg1 from '../assets/IMG-20240108-WA0001-removebg-preview.png';
-import {
-  AiFillGithub,
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillMessage,
-  AiFillMail,
-} from 'react-icons/ai';
+
 import {
   PiHandshakeDuotone,
   PiHandWavingDuotone,
   PiHandWavingThin,
 } from 'react-icons/pi';
-
+import Socials from './Socials';
 import { MdArrowRightAlt } from 'react-icons/md';
 import { Link } from 'react-scroll';
 
 const Home = ({ darkMode, BG, bgLight }) => {
   return (
-    <div name='home' className={`darkMode ? ${BG} :'' mt-0 min-h-screen`}>
+    <div
+      name='home'
+      className={`darkMode ? ${BG} :'' bg-cover mt-0 min-h-screen`}
+    >
       {darkMode ? (
         <div class='relative w-full max-w-lg '>
           <div class='absolute top-0 right-20   w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob  '></div>
@@ -27,8 +24,11 @@ const Home = ({ darkMode, BG, bgLight }) => {
         </div>
       ) : null}
 
-      <div className='pt-20 md:pt-36 lg:pt-36 px-2 lg:px-10 min-h-screen w-screen flex flex-col md:flex-row  justify-between '>
-        <div className='text-center p-0 lg:p-10    '>
+      <div
+        className='pt-20 md:pt-36 lg:pt-36 px-5 md:px-10 min-h-screen w-screen flex flex-col 
+      lg:flex-row  justify-between md:justify-center'
+      >
+        <div className='text-center p-0  md:p-0 lg:p-10    '>
           <div className=''>
             <h2 className='text-4xl font-fuggles bg-gradient-to-r from-fuchsia-700 via-pink-900 to-indigo-950 dark:text-orange-200  bg-clip-text text-transparent  py-2'>
               <span className=' text-lg text-black dark:text-gray-100 '>
@@ -51,24 +51,28 @@ const Home = ({ darkMode, BG, bgLight }) => {
           </div>
           <div className='text-2xl flex flex-col md:flex-row items-center justify-center text-gray-900 gap-16 py-5 '>
             <div className=' md:ml-10'>
-              <Link className=' cursor-pointer rounded-full bg-gradient-to-r from-cyan-500 to-teal-500 px-7 py-2  flex items-center text-sm font-bold '>
+              <Link
+                to='contact'
+                className=' cursor-pointer rounded-full bg-gradient-to-r from-cyan-500 to-teal-500 px-7 py-2  flex items-center text-sm font-bold '
+              >
                 <PiHandshakeDuotone className='w-7 h-7 mr-5' /> Let's Connect
                 <MdArrowRightAlt className='w-7 h-7' />
               </Link>
             </div>
             <div className=' flex items-center justify-center lg:gap-16 gap-10'>
-              <AiFillTwitterCircle className='dark:text-gray-100' />
-              <AiFillLinkedin className='dark:text-gray-100' />
-              <AiFillGithub className='dark:text-gray-100' />
-              <AiFillMail className='dark:text-gray-100' />
+              <Socials
+                containerStyles=' flex items-center justify-center lg:gap-16 gap-10'
+                iconsStyles='dark:text-gray-100 hover:text-cyan-500 dark:hover:text-pink-900'
+              />
             </div>
+            {/* Socials */}
           </div>
         </div>
 
         <img
           src={simpleimg1}
           alt='simple-headerimage'
-          className='w-96 h-96 object-cover border-none rounded'
+          className='w-96 h-96  md:mx-auto md:mt-20 lg:mt-0 lg:mx-none'
         />
       </div>
     </div>

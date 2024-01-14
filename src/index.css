@@ -18,14 +18,8 @@
     background-blend-mode: overlay;
     opacity: 1;
   } */
-
-  .nav {
-    @apply relative;
-  }
-  .nav::after {
-    @apply content-none bg-pink-300  h-3 w-full absolute left-0;
-  }
 }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
