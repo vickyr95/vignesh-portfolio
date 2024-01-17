@@ -33,7 +33,7 @@ const Contact = ({ darkMode, BG, bgLight }) => {
         opacity: 1,
       }}
       transition={{
-        duration: 4,
+        duration: 3,
       }}
     >
       <div className={`container mx-auto  `}>

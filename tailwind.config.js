@@ -10,6 +10,7 @@ module.exports = {
         dark: 'url("/src/assets/banner-bg.png")', // Define dark mode background image
         contact_light: 'url("/src/assets/illustration-dark.svg")',
         contact_dark: 'url("/src/assets/contact-img.svg")',
+        project_bg_light: 'url("/src/")',
       },
       homebg: {
         homebgImage: 'url("/src/assets/pngabstract.jpg")', // Define light mode background image
@@ -18,8 +19,10 @@ module.exports = {
       fontFamily: {
         burtons: ['burtons', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
-
-        fuggles: ['Fuggles', 'cursive'],
+        klee_one: ['klee-one', 'cursive'],
+        cursive: 'cursive',
+        // centraNo2_Medium: ['CentraNo2-Medium'],
+        centraNo2_Book: ['centrano2-book', 'cursive'],
       },
     },
 

@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import About from './components/About';
-import Contact from './components/Contact';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
-import Projects from './components/Projects';
-import Service from './components/Service';
-import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+
+import AllProjects from './components/AllProjects';
+import OverAllPage from './components/OverAllPage';
+import { AnimatePresence } from 'framer-motion';
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-
+  const location = useLocation();
   const bgLight = !darkMode ? 'bg-light' : '';
   const BG = darkMode ? 'bg-dark' : '';
   useEffect(() => {
@@ -18,27 +16,29 @@ function App() {
     document.body.classList.toggle('dark', darkMode);
   }, [darkMode]);
   return (
-    // className={darkMode ? 'dark' : ''}
     <div className={`${darkMode ? 'dark' : ''} overflow-x-hidden`}>
       <main
-        className={`dark:bg-black ${bgLight}   text-black dark:text-gray-100 
+        className={` ${
+          location.pathname === '/' ? `dark:bg-black ${bgLight}` : ''
+        }  text-black dark:text-gray-100 
          bg-cover  bg-bottom  px-0 lg:px-0 w-screen md:w-screen overflow-x-hidden`}
       >
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        <Home darkMode={darkMode} BG={BG} bgLight={bgLight} />
-        <About darkMode={darkMode} bgLight={bgLight} />
-        <Service darkMode={darkMode} BG={BG} bgLight={bgLight} />
-        <Projects />
-        <Contact darkMode={darkMode} BG={BG} bgLight={bgLight} />
-        <Footer darkMode={darkMode} BG={BG} bgLight={bgLight} />
-        {/* <section className=' min-h-screen'>
-        <Navbar />
-        <Home />
-        <About />
-        <Service />
-        <Projects />
-        <Contact />
-      </section> */}
+        <AnimatePresence initial={false}>
+          <Routes location={location} key={location.pathname}>
+            <Route
+              path='/'
+              element={
+                <OverAllPage
+                  darkMode={darkMode}
+                  BG={BG}
+                  bgLight={bgLight}
+                  setDarkMode={setDarkMode}
+                />
+              }
+            />
+            <Route path='/projects' element={<AllProjects />} />
+          </Routes>
+        </AnimatePresence>
       </main>
     </div>
   );

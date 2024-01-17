@@ -33,7 +33,7 @@ const experienceData = [
 const Experience = () => {
   return (
     <section className=''>
-      <h3 className=' text-2xl lg:pb-10  text-center  font-bold tracking-widest'>
+      <h3 className=' text-2xl  lg:pb-10  text-center  font-bold tracking-widest'>
         MyExperience
       </h3>
       <VerticalTimeline>

@@ -35,5 +35,17 @@ code {
 }
 @font-face {
   font-family: 'burtons';
-  src: url('./assets/Burtons.otf');
+  src: url('./assets/fonts/Burtons.otf');
+}
+@font-face {
+  font-family: 'poppins';
+  src: url('./assets/fonts/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: 'klee-one';
+  src: url('./assets/fonts/KleeOne-Regular.ttf');
+}
+@font-face {
+  font-family: 'centrano2-book';
+  src: url('./assets/fonts/CentraNo2-Book.ttf');
 }

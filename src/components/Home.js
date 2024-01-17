@@ -30,7 +30,7 @@ const Home = ({ darkMode, BG, bgLight }) => {
       >
         <div className='text-center p-0  md:p-0 lg:p-10    '>
           <div className=''>
-            <h2 className='text-4xl font-fuggles bg-gradient-to-r from-fuchsia-700 via-pink-900 to-indigo-950 dark:text-orange-200  bg-clip-text text-transparent  py-2'>
+            <h2 className='text-4xl font-cursive bg-gradient-to-r from-fuchsia-700 via-pink-900 to-indigo-950 dark:text-orange-200  bg-clip-text text-transparent  py-2'>
               <span className=' text-lg text-black dark:text-gray-100 '>
                 Hai,{' '}
                 <span className='h-7'>

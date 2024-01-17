@@ -56,7 +56,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       >
         <div className='flex  justify-between items-center w-11/12'>
           <div>
-            <h1 className='text-3xl font-fuggles'>VR</h1>
+            <h1 className='text-3xl font-cursive'>VR</h1>
           </div>
           <div className='hidden md:flex space-x-5 font-poppins  dark:text-white'>
             {navItems.map((item) => {
@@ -66,7 +66,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                   to={item.to}
                   // spy={true}
                   smooth={true}
-                  className='nav text-md font-bold  cursor-pointer text-md dark:text-gray-100
+                  className='nav text-md font-bold  dark:font-extralight cursor-pointer text-md dark:text-gray-100
  hover:text-pink-950 dark:hover:text-pink-900  border-x-4 py-2
  shadow-md rounded-lg dark:rounded border-cyan-100  dark:border-none hover:bg-gray-100 dark:hover:bg-amber-50/50   
  md:px-5 md:my-2
@@ -82,7 +82,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <div className='flex items-center  justify-end w-2/12 space-x-5 '>
           {!darkMode ? (
             <PiCloudMoon
-              className='cursor-pointer  text-xl'
+              className='cursor-pointer font-bold text-xl'
               onClick={handleDarkMode}
             />
           ) : (
