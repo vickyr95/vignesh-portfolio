@@ -22,7 +22,7 @@ const Skills = () => {
     'Agile Metholologies',
   ];
   return (
-    <section className='my-10 md:mb-10  '>
+    <section className='my-10 md:mb-10  px-5'>
       <h3 className=' text-xl md:pb-7 my-10 md:my-0 text-center  font-bold tracking-widest'>
         MySkills
       </h3>

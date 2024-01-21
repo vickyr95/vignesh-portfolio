@@ -20,7 +20,7 @@ function App() {
       <main
         className={` ${
           location.pathname === '/' ? `dark:bg-black ${bgLight}` : ''
-        }  text-black dark:text-gray-100 
+        }  text-black dark:text-gray-200 
          bg-cover  bg-bottom  px-0 lg:px-0 w-screen md:w-screen overflow-x-hidden`}
       >
         <AnimatePresence initial={false}>

@@ -10,12 +10,10 @@ module.exports = {
         dark: 'url("/src/assets/banner-bg.png")', // Define dark mode background image
         contact_light: 'url("/src/assets/illustration-dark.svg")',
         contact_dark: 'url("/src/assets/contact-img.svg")',
-        project_bg_light: 'url("/src/")',
+        project_color_dark1: 'url("src/assets/color-sharp.png")',
+        project_color_dark2: 'url("/src/assets/color-sharp2.png")',
       },
-      homebg: {
-        homebgImage: 'url("/src/assets/pngabstract.jpg")', // Define light mode background image
-        homebgImagedark: 'url("/src/assets/banner-bg.png")', // Define dark mode background image
-      },
+
       fontFamily: {
         burtons: ['burtons', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],

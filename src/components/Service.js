@@ -112,7 +112,7 @@ const Service = ({ darkMode, BG, bgLight }) => {
           />
           <h3 className='text-2xl font-medium pt-2'>Code</h3>
           <p className=''>Design and development of custom robots</p>
-          <h4 className='pt-3 pb-1 text-teal-600 font-bold text-md text-left'>
+          <h4 className='pt-3 pb-1 text-teal-600 font-bold text-md '>
             Design tools I use
           </h4>
           <div className='grid grid-cols-2 md:grid-cols-2 '>

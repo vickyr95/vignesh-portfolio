@@ -1,21 +1,24 @@
 import React, { useState } from 'react';
-import ProjectCard from './ProjectCard';
-import { projectsData } from '../utils/data';
-import binPicking from '../assets/project-images/bin-picking.jpg';
-import windowCleaning from '../assets/project-images/skyscrapper.png';
 import football from '../assets/project-images/football.png';
 import ADAS from '../assets/project-images/car-gif.gif';
-import agriMobile from '../assets/project-images/robot.jpg';
+import agriMobile from '../assets/project-images/agriMobile.jpg';
 import golfBallLocation from '../assets/project-images/golf.png';
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 import { Link, Link as ReactLink } from 'react-router-dom';
+import { SiGoogledocs } from 'react-icons/si';
+import { BsFillCollectionPlayFill } from 'react-icons/bs';
 import rImage from '../assets/project-images/r-image-removebg-preview (1).png';
 const Projects = ({ darkMode, BG, bgLight }) => {
   return (
     <div
       name='projects'
-      className={` ${bgLight} dark:bg-black bg-cover bg-right py-10 min-h-screen`}
+      className={` ${bgLight}  dark:text-gray-200 bg-cover bg-right py-10 min-h-screen`}
     >
+      {darkMode ? (
+        <div className='relative w-full max-w-lg  '>
+          <div className='bg-project_color_dark1 z-50'></div>
+        </div>
+      ) : null}
       <div className='container px-10 mx-auto relative'>
         {/* <img
           src={rImage}
@@ -25,83 +28,171 @@ const Projects = ({ darkMode, BG, bgLight }) => {
         <div className=' flex flex-col items-center  mx-auto  '>
           {/* Head Section */}
           <div className=' flex flex-col gap-4 items-center max-w-35rem mx-auto  '>
-            <span className=' text-black text-4xl font-bold capitalize'>
+            <span className=' text-black dark:text-gray-200 text-4xl font-bold capitalize'>
               Projects
             </span>
-            <span className='align-center  text-xl leading-8 md:leading-0 text-black capitalize'>
-              Projects along with videos and photos
-            </span>
+            <span className=' text-black dark:text-gray-200 text-4xl font-bold capitalize'></span>
           </div>
           <div className=' flex flex-col items-center gap-4  py-0 md:py-5  md:mx-auto'>
-            <div className='flex items-center bg-violet-500 mx-auto md:mr-96 my-5 rounded-2xl w-80 h-80 md:w-[28rem] md:h-56'>
+            <div className=' group flex relative items-center bg-violet-500 mx-auto md:mr-96 my-5 rounded-2xl w-80 h-80 md:w-[28rem] md:h-56'>
               {/* Image */}
-              {/* <div>
+              <div className=''>
                 <img
-                  src={binPicking}
+                  src={golfBallLocation}
                   alt='projectimage'
-                  className='w-80 h-56 rounded-md'
+                  className='w-full h-full md:w-[28rem] md:h-56 rounded-2xl  '
                 />
-              </div> */}
+                <div className='absolute top-20 left-16 md:left-32 flex gap-20 '>
+                  <a
+                    href='# '
+                    target='_blank'
+                    className='bg-black/50 w-[54px] h-[54px] rounded-full flex justify-center 
+              items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100
+               transition-all 
+            duration-200 '
+                  >
+                    <SiGoogledocs className='text-white' />
+                  </a>
+                  <a
+                    href='#'
+                    className='bg-black/50 w-[54px] h-[54px] rounded-full flex justify-center 
+              items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100
+               transition-all 
+            duration-200 '
+                  >
+                    <BsFillCollectionPlayFill className='text-white' />
+                  </a>
+                </div>
+              </div>
               {/* Project name */}
-              {/* <div>
-                <span className=' text-xl font-medium'>
-                  Bin picking robot simulation
+              <div className='absolute  top-36 left-10 md:top-10 md:-right-60 flex flex-col flex-nowrap gap-2 items-start md:items-end'>
+                <span className=' font-poppins text-2xl md:text-4xl  font-bold dark:text-gray-100 '>
+                  Golf ball detection
                 </span>
-              </div> */}
+                <span className='font-klee_one text-2xl  md:text-3xl mr-40 font-bold  dark:text-gray-100'>
+                  Feb 2023
+                </span>
+              </div>
             </div>
-            <div className='relative flex flex-row-reverse items-center  mx-auto   my-5 w-80 h-80 md:w-[22rem] md:h-[20rem] md:ml-[26rem] rounded-2xl '>
+            <div className=' group relative flex flex-row-reverse items-center  mx-auto bg-stone-700  my-5 w-80 h-80 md:w-[22rem] md:h-[20rem] md:ml-[26rem] rounded-2xl '>
               {/* Image */}
               <div>
                 <img
                   src={ADAS}
                   alt='projectimage'
-                  className='w-full h-[20rem]  rounded-2xl'
+                  className='w-full h-[20rem] rounded-2xl  '
                 />
+                <div className='absolute top-20 left-16 md:top-32  md:left-20 flex gap-20  '>
+                  <a
+                    href='# '
+                    target='_blank'
+                    className='bg-black/50 w-[54px] h-[54px] rounded-full flex justify-center 
+              items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100
+               transition-all 
+            duration-200 '
+                  >
+                    <SiGoogledocs className='text-white' />
+                  </a>
+                  <a
+                    href='#'
+                    className='bg-black/50 w-[54px] h-[54px] rounded-full flex justify-center 
+              items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100
+               transition-all 
+            duration-200 '
+                  >
+                    <BsFillCollectionPlayFill className='text-white' />
+                  </a>
+                </div>
               </div>
               {/* Project name */}
-              <div className=' absolute top-36 left-10 md:top-48 md:-left-[14rem]  flex flex-col gap-4 items-start md:items-end '>
-                <span className=' font-centraNo2_Book text-2xl md:text-4xl  font-bold'>
+              <div className=' absolute  top-36 left-10 md:top-48 md:-left-[14rem]  flex flex-col gap-2 items-start md:items-end '>
+                <span className=' font-poppins text-2xl md:text-4xl  font-bold dark:text-pink-900 '>
                   ADAS-BEVfusion
                 </span>
-                <span className='font-klee_one text-2xl  md:text-3xl  font-bold  text-gray-900'>
-                  March 2023
+                <span className='font-klee_one text-2xl  md:text-3xl  font-bold  dark:text-pink-900'>
+                  June 2023
                 </span>
               </div>
             </div>
-            <div className='flex items-center w-80 h-80 bg-gradient-to-br from-pink-700 to-purple-900 mx-auto md:mr-[32rem] my-5  rounded-2xl md:w-80 md:h-60'>
+            <div className='group flex relative items-center w-80 h-80 bg-gradient-to-br from-pink-700 to-purple-900 mx-auto md:mr-[32rem] my-5  rounded-2xl md:w-80 md:h-60'>
               {/* Image */}
-              {/* <div>
+              <div>
                 <img
-                  src={binPicking}
+                  src={agriMobile}
                   alt='projectimage'
-                  className='w-80 h-56 rounded-md'
+                  className='md:w-80 md:h-60 rounded-2xl'
                 />
-              </div> */}
+                <div className='absolute top-20 left-16 md:top-24  md:left-14 flex gap-20  '>
+                  <a
+                    href='# '
+                    target='_blank'
+                    className='bg-black/50 w-[54px] h-[54px] rounded-full flex justify-center 
+              items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100
+               transition-all 
+            duration-200 '
+                  >
+                    <SiGoogledocs className='text-white' />
+                  </a>
+                  <a
+                    href='#'
+                    className='bg-black/50 w-[54px] h-[54px] rounded-full flex justify-center 
+              items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100
+               transition-all 
+            duration-200 '
+                  >
+                    <BsFillCollectionPlayFill className='text-white' />
+                  </a>
+                </div>
+              </div>
               {/* Project name */}
-              {/* <div>
-                <span className=' text-xl font-medium'>
-                  Bin picking robot simulation
+              <div className=' absolute   md:top-20 md:-right-[14rem]  flex flex-col gap-2 items-start  '>
+                <span className=' font-poppins text-2xl md:text-4xl  font-bold dark:text-pink-900 '>
+                  Agri mobile robot
                 </span>
-              </div> */}
+                <span className='font-klee_one text-2xl  md:text-3xl  font-bold  dark:text-pink-900'>
+                  2022- 2023
+                </span>
+              </div>
             </div>
-            <div className='relative  flex flex-row-reverse items-center  mx-auto  bg-stone-700 my-5 w-80 h-80 md:w-[30rem] md:h-56 md:ml-96 rounded-2xl '>
+            <div className='relative group flex flex-row-reverse items-center  mx-auto  bg-stone-700 my-5 w-80 h-80 md:w-[30rem] md:h-56 md:ml-96 rounded-2xl '>
               {/* Image */}
-              {/* <div>
+              <div>
                 <img
-                  src={ADAS}
+                  src={football}
                   alt='projectimage'
-                  className='w-full h-[20rem]  rounded-2xl'
+                  className='md:w-[30rem] md:h-56  rounded-2xl'
                 />
-              </div> */}
+                <div className='absolute top-20 left-16 md:top-20  md:left-40 flex gap-20  '>
+                  <a
+                    href='# '
+                    target='_blank'
+                    className='bg-black/50 w-[54px] h-[54px] rounded-full flex justify-center 
+              items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100
+               transition-all 
+            duration-200 '
+                  >
+                    <SiGoogledocs className='text-white' />
+                  </a>
+                  <a
+                    href='#'
+                    className='bg-black/50 w-[54px] h-[54px] rounded-full flex justify-center 
+              items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100
+               transition-all 
+            duration-200 '
+                  >
+                    <BsFillCollectionPlayFill className='text-white' />
+                  </a>
+                </div>
+              </div>
               {/* Project name */}
-              {/* <div className=' absolute top-36 left-10 md:top-48 md:-left-[22.50rem]  flex flex-col gap-4 items-start md:items-end '>
-                <span className=' font-centraNo2_Book text-2xl md:text-3xl  font-bold'>
-                  ADAS-BEVfusion project
+              <div className=' absolute  top-36 left-10 md:top-24 md:-left-[25rem]  flex flex-col gap-2 items-start md:items-end '>
+                <span className=' font-poppins text-2xl md:text-4xl  font-bold dark:text-pink-900 '>
+                  Football video automation
                 </span>
-                <span className='font-klee_one text-2xl  md:text-3xl  font-bold  text-gray-900'>
-                  March 2023
+                <span className='font-klee_one text-2xl  md:text-3xl  font-bold  dark:text-pink-900'>
+                  2021- 2022
                 </span>
-              </div> */}
+              </div>
             </div>
           </div>
           <ReactLink as={Link} to='/projects'>

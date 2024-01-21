@@ -7,7 +7,7 @@ import Projects from './Projects';
 import Service from './Service';
 import Footer from './Footer';
 import { motion } from 'framer-motion';
-import { useLocation } from 'react-router-dom';
+
 const OverAllPage = ({ darkMode, BG, bgLight, setDarkMode }) => {
   return (
     <motion.div

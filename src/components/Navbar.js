@@ -67,7 +67,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                   // spy={true}
                   smooth={true}
                   className='nav text-md font-bold  dark:font-extralight cursor-pointer text-md dark:text-gray-100
- hover:text-pink-950 dark:hover:text-pink-900  border-x-4 py-2
+ hover:text-pink-950 dark:hover:text-pink-900  border-x-2 py-2
  shadow-md rounded-lg dark:rounded border-cyan-100  dark:border-none hover:bg-gray-100 dark:hover:bg-amber-50/50   
  md:px-5 md:my-2
  '
