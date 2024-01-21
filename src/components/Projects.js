@@ -65,11 +65,20 @@ const Projects = ({ darkMode, BG, bgLight }) => {
                 </div>
               </div>
               {/* Project name */}
-              <div className='absolute  top-36 left-10 md:top-10 md:-right-60 flex flex-col flex-nowrap gap-2 items-start md:items-end'>
-                <span className=' font-poppins text-2xl md:text-4xl  font-bold dark:text-gray-100 '>
+              <div className='absolute top-36 left-10 md:top-10 md:-right-60 flex flex-col flex-nowrap gap-2 items-start md:items-end '>
+                <span
+                  className=' font-poppins text-2xl md:text-4xl  font-bold
+                 dark:text-gray-100 border-none   
+                 rounded-md shadow-lg p-4 bg-yellow-100/50 '
+                >
                   Golf ball detection
                 </span>
-                <span className='font-klee_one text-2xl  md:text-3xl mr-40 font-bold  dark:text-gray-100'>
+
+                <span
+                  className='font-klee_one text-2xl  md:text-3xl md:mr-40 font-bold 
+                 dark:text-gray-100  border-none    
+                 rounded-md shadow-lg p-4 bg-yellow-100/50'
+                >
                   Feb 2023
                 </span>
               </div>
@@ -105,11 +114,18 @@ const Projects = ({ darkMode, BG, bgLight }) => {
                 </div>
               </div>
               {/* Project name */}
-              <div className=' absolute  top-36 left-10 md:top-48 md:-left-[14rem]  flex flex-col gap-2 items-start md:items-end '>
-                <span className=' font-poppins text-2xl md:text-4xl  font-bold dark:text-pink-900 '>
+              <div className=' absolute  top-36 left-10 md:top-41 md:-left-[14rem]  flex flex-col gap-2 items-start md:items-end '>
+                <span
+                  className=' font-poppins text-2xl md:text-4xl  font-bold dark:text-gray-100 border-none  
+                 rounded-md shadow-lg p-4 bg-yellow-100/50'
+                >
                   ADAS-BEVfusion
                 </span>
-                <span className='font-klee_one text-2xl  md:text-3xl  font-bold  dark:text-pink-900'>
+                <span
+                  className='font-klee_one text-2xl  md:text-3xl  font-bold  dark:text-gray-100
+                border-none   
+                rounded-md shadow-lg p-4 bg-yellow-100/50'
+                >
                   June 2023
                 </span>
               </div>
@@ -145,11 +161,18 @@ const Projects = ({ darkMode, BG, bgLight }) => {
                 </div>
               </div>
               {/* Project name */}
-              <div className=' absolute   md:top-20 md:-right-[14rem]  flex flex-col gap-2 items-start  '>
-                <span className=' font-poppins text-2xl md:text-4xl  font-bold dark:text-pink-900 '>
+              <div className=' absolute top-36 left-10  md:top-20 md:-right-[14rem]  flex flex-col gap-2 items-start  '>
+                <span
+                  className=' font-poppins text-2xl md:text-4xl  font-bold dark:text-gray-100 border-none   
+                 rounded-md shadow-lg p-4 bg-yellow-100/50 '
+                >
                   Agri mobile robot
                 </span>
-                <span className='font-klee_one text-2xl  md:text-3xl  font-bold  dark:text-pink-900'>
+                <span
+                  className='font-klee_one text-2xl  md:text-3xl  font-bold  dark:text-gray-100
+                border-none  
+                rounded-md shadow-lg p-4 bg-yellow-100/50'
+                >
                   2022- 2023
                 </span>
               </div>
@@ -185,11 +208,18 @@ const Projects = ({ darkMode, BG, bgLight }) => {
                 </div>
               </div>
               {/* Project name */}
-              <div className=' absolute  top-36 left-10 md:top-24 md:-left-[25rem]  flex flex-col gap-2 items-start md:items-end '>
-                <span className=' font-poppins text-2xl md:text-4xl  font-bold dark:text-pink-900 '>
+              <div className=' absolute  top-36 left-10 md:top-16 md:-left-[25rem]  flex flex-col gap-2 items-start md:items-end '>
+                <span
+                  className=' font-poppins text-2xl md:text-4xl  font-bold dark:text-gray-100 border-none   
+                 rounded-md shadow-lg p-4 bg-yellow-100/50'
+                >
                   Football video automation
                 </span>
-                <span className='font-klee_one text-2xl  md:text-3xl  font-bold  dark:text-pink-900'>
+                <span
+                  className='font-klee_one text-2xl  md:text-3xl  font-bold  dark:text-gray-100
+                border-none  
+                rounded-md shadow-lg p-4 bg-yellow-100/50'
+                >
                   2021- 2022
                 </span>
               </div>
