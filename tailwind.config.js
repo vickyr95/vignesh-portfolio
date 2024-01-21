@@ -10,7 +10,7 @@ module.exports = {
         dark: 'url("/src/assets/banner-bg.png")', // Define dark mode background image
         contact_light: 'url("/src/assets/illustration-dark.svg")',
         contact_dark: 'url("/src/assets/contact-img.svg")',
-        project_color_dark1: 'url("src/assets/color-sharp.png")',
+        project_color_dark1: 'url("/src/assets/color-sharp.png")',
         project_color_dark2: 'url("/src/assets/color-sharp2.png")',
       },
 
