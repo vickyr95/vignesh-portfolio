@@ -4,6 +4,19 @@ import football from '../assets/project-images/football.png';
 import ADAS from '../assets/project-images/car.png';
 import agriMobile from '../assets/project-images/agriMobile.jpg';
 import golfBallLocation from '../assets/project-images/golf.png';
+
+import ROS2 from '../assets/service-images/ROS2.png';
+import AIDeepLearning from '../assets/service-images/Town-Centre-video-sample-frame-Right-Yolact-result-Left-Mask-R-CNN-result_Q320.jpg';
+import computerVS from '../assets/service-images/gramener-computer-vision-solutions.webp';
+import AIproductLCM from '../assets/service-images/ai-life-cycle.png';
+import EHSFD from '../assets/service-images/640652c3ecec070a76f32338_embedded-systems.webp';
+import apps from '../assets/service-images/ios&android.png';
+import drone from '../assets/service-images/drone.png';
+import SIC from '../assets/service-images/AdobeStock_221128268-scaled.jpeg';
+import consult from '../assets/service-images/consulting.png';
+import code from '../assets/service-images/code.png';
+import industrialRobotics from '../assets/service-images/industrial-robotics.png';
+
 export const projectsData = [
   {
     title: 'Bin picking robot simulation',
@@ -46,5 +59,67 @@ export const projectsData = [
     description:
       'Designed an immersive golf simulation where real-time ball parameters like speed and direction were monitored, creating an authentic on-screen experience. Utilizing OpenCV for ball detection and speed calculation, the project integrated a custom handheld device (ESP32 IMU-based) worn by the player to transmit hitting times. This setup provided accurate feedback, replicating the dynamics of a golf game for a comprehensive and engaging experience.',
     docs: 'https://docs.google.com/document/d/1Fs4Q088702WKSWxqk_I64KNVnjbhc-XCtmeiWr8KhjE/edit?usp=sharing',
+  },
+];
+
+export const servicesData = [
+  {
+    id: 1,
+    service: 'ROS1 and ROS2 real-time and simultion expertise',
+    icon: ROS2,
+  },
+  {
+    id: 2,
+    service: 'Android and iOS app development',
+    icon: apps,
+  },
+  {
+    id: 3,
+    service: 'Industrial robotics programming',
+    icon: industrialRobotics,
+  },
+  {
+    id: 4,
+    service: 'Drone programming and control',
+    icon: drone,
+  },
+  {
+    id: 5,
+    service: 'Computer vision solutions',
+    icon: computerVS,
+  },
+  {
+    id: 6,
+    service: 'Robotic and automation solution consultation',
+    icon: consult,
+  },
+  {
+    id: 7,
+    service: 'Programming in Python, C++ and C',
+    icon: code,
+  },
+  {
+    id: 8,
+    service: 'AI product lifecycle management',
+    icon: AIproductLCM,
+  },
+
+  {
+    id: 9,
+    service:
+      'Sensor integration and control (lidar, radar, vision-based sensors)',
+    icon: SIC,
+  },
+
+  {
+    id: 10,
+    service: 'Embedded hardware solution and firmware development',
+    icon: EHSFD,
+  },
+  {
+    id: 11,
+    service:
+      'AI Deep Learning models (YOLO, YOLACt, MIDAS, Mask RCNN) in real world application',
+    icon: AIDeepLearning,
   },
 ];

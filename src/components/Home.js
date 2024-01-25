@@ -1,5 +1,5 @@
 import React from 'react';
-import simpleimg1 from '../assets/IMG-20240108-WA0001-removebg-preview.png';
+import hero from '../assets/hero.png';
 
 import {
   PiHandshakeDuotone,
@@ -70,7 +70,7 @@ const Home = ({ darkMode, BG, bgLight }) => {
         </div>
 
         <img
-          src={simpleimg1}
+          src={hero}
           alt='simple-headerimage'
           className='w-96 h-96  md:mx-auto md:mt-20 lg:mt-0 lg:mx-none'
         />

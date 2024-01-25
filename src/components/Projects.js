@@ -12,14 +12,14 @@ const Projects = ({ darkMode, BG, bgLight }) => {
   return (
     <div
       name='projects'
-      className={` ${bgLight}  dark:text-gray-200 bg-cover bg-right py-10 min-h-screen`}
+      className={` ${bgLight}  dark:text-gray-200 bg-cover bg-right py-10 min-h-screen `}
     >
       {darkMode ? (
         <div className='relative w-full max-w-lg  '>
           <div className='bg-project_color_dark1 z-50'></div>
         </div>
       ) : null}
-      <div className='container px-10 mx-auto relative'>
+      <div className='container px-10 mx-auto mt-10 relative'>
         {/* <img
           src={rImage}
           alt='rImage'
@@ -33,7 +33,7 @@ const Projects = ({ darkMode, BG, bgLight }) => {
             </span>
             <span className=' text-black dark:text-gray-200 text-4xl font-bold capitalize'></span>
           </div>
-          <div className=' flex flex-col items-center gap-4  py-0 md:py-5  md:mx-auto'>
+          <div className=' flex flex-col items-center gap-4  py-0 md:py-5  md:mx-auto '>
             <div className=' group flex relative items-center bg-violet-500 mx-auto md:mr-96 my-5 rounded-2xl w-80 h-80 md:w-[28rem] md:h-56'>
               {/* Image */}
               <div className=''>
@@ -130,7 +130,11 @@ const Projects = ({ darkMode, BG, bgLight }) => {
                 </span>
               </div>
             </div>
-            <div className='group flex relative items-center w-80 h-80 bg-gradient-to-br from-pink-700 to-purple-900 mx-auto md:mr-[32rem] my-5  rounded-2xl md:w-80 md:h-60'>
+            <div
+              className='group flex relative items-center w-80 h-80 bg-gradient-to-br
+             from-pink-700 to-purple-900 mx-auto md:mr-[32rem] my-5  rounded-2xl 
+             md:w-80 md:h-60'
+            >
               {/* Image */}
               <div>
                 <img
@@ -161,7 +165,7 @@ const Projects = ({ darkMode, BG, bgLight }) => {
                 </div>
               </div>
               {/* Project name */}
-              <div className=' absolute top-36 left-10  md:top-20 md:-right-[14rem]  flex flex-col gap-2 items-start  '>
+              <div className=' absolute top-36 left-10  md:top-20 md:-right-48  md:pl-32  flex flex-col gap-2 items-start  '>
                 <span
                   className=' font-poppins text-2xl md:text-4xl  font-bold dark:text-gray-100 border-none   
                  rounded-md shadow-lg p-4 bg-yellow-100/50 '
@@ -226,7 +230,7 @@ const Projects = ({ darkMode, BG, bgLight }) => {
             </div>
           </div>
           <ReactLink as={Link} to='/projects'>
-            <p className='text-md font-semibold'>
+            <p className='text-xl font-semibold'>
               See more projects
               <MdKeyboardDoubleArrowRight className='inline' />
             </p>
