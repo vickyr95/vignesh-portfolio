@@ -32,22 +32,40 @@ const Service = ({ darkMode, BG, bgLight }) => {
         </p>
       </div>
       <Swiper
-        spaceBetween={50}
-        slidesPerView={4}
-        slidesPerGroup={4}
+        // spaceBetween={50}
+        // slidesPerView={4}
+        // slidesPerGroup={4}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 2,
+            autoplay: {
+              delay: 2000,
+              disableOnInteraction: false,
+            },
+          },
+
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+            slidesPerGroup: 4,
+            autoplay: {
+              delay: 5000,
+              disableOnInteraction: false,
+            },
+          },
+        }}
         modules={[Pagination, Navigation, Autoplay]}
         pagination={{ clickable: 'true' }}
-        className='mt-10 '
-        autoplay={{
-          delay: 7000,
-        }}
+        className='mt-10  '
       >
         {servicesData.map((item, index) => {
           return (
             <SwiperSlide key={index}>
               <div
                 className=' text-center shadow-lg p-5 
-           bg-pink-100   rounded-xl  text-black items-center justify-between'
+           bg-pink-100 mx-5 md:mx-0  rounded-xl  text-black items-center justify-between'
               >
                 <img
                   src={item.icon}
