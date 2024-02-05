@@ -62,7 +62,7 @@ const Footer = ({ darkMode, BG, bgLight }) => {
             </Typography>
             <Typography
               variant='h5'
-              className='mt-10 mb-2 md:mt-5  text-xl font-semibold z-50 '
+              className=' mt-5 mb-10  text-xl text-stone-700 dark:text-pink-800 font-semibold z-50 '
             >
               Let's connect and work together to make a difference.
             </Typography>

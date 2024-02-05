@@ -84,12 +84,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <div className='flex items-center  justify-end w-7/12  sm:w-7/12 md:w-3/12 lg:w-2/12 space-x-5 '>
           {!darkMode ? (
             <PiCloudMoon
-              className='cursor-pointer font-bold text-xl'
+              className='cursor-pointer font-bold text-xl w-6 h-6'
               onClick={handleDarkMode}
             />
           ) : (
             <LuCloudSun
-              className='cursor-pointer  text-xl '
+              className='cursor-pointer  text-xl w-6 h-6'
               onClick={handleDarkMode}
             />
           )}

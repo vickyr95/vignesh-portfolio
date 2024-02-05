@@ -34,7 +34,7 @@ const Projects = ({ darkMode, BG, bgLight }) => {
           <span className=' text-black dark:text-gray-200 text-xl font-bold '>
             PROJECTS
           </span>
-          <span className=' text-black dark:text-gray-200 text-xl font-semibold '>
+          <span className=' text-black dark:text-gray-200 text-xl text-center mx-5 font-semibold '>
             Embark on a journey of innovation and efficiency with our latest
             robotics engineering projects.
           </span>
