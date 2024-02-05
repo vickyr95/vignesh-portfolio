@@ -9,6 +9,7 @@ import {
 import { Link } from 'react-scroll';
 import { LuCloudSun } from 'react-icons/lu';
 import { PiCloudMoon } from 'react-icons/pi';
+import initial from '../assets/initial-vr.png';
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [menuVisible, setMenuVisible] = useState(false);
   const [closeMenu, setCloseMenu] = useState(false);
@@ -54,11 +55,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         className={` flex justify-between items-center border-b 
         rounded-md shadow-md  dark:shadow-md dark:border-none bg-blend-overlay  md:bg-gradient-to-r from-green-50 to-amber-50 dark:bg-black z-50`}
       >
-        <div className='flex  justify-between items-center w-11/12'>
+        <div className='flex  justify-between items-center  md:w-9/12 lg:w-11/12'>
           <div>
-            <h1 className='text-3xl font-cursive'>VR</h1>
+            <img src={initial} alt='initial-vr' className='w-10 h-10 ml-4 ' />
+            {/* <h1 className='text-3xl font-cursive ml-4'>VR</h1> */}
           </div>
-          <div className='hidden md:flex space-x-5 font-poppins  dark:text-white'>
+          <div className='hidden md:flex space-x-5  font-poppins  dark:text-white'>
             {navItems.map((item) => {
               return (
                 <Link
@@ -66,7 +68,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                   to={item.to}
                   // spy={true}
                   smooth={true}
-                  className='nav text-md font-bold  dark:font-extralight cursor-pointer text-md dark:text-gray-100
+                  className='nav text-md  font-bold  dark:font-extralight cursor-pointer text-md dark:text-gray-100
  hover:text-pink-950 dark:hover:text-pink-900  border-x-2 py-2
  shadow-md rounded-lg dark:rounded border-cyan-100  dark:border-none hover:bg-gray-100 dark:hover:bg-amber-50/50   
  md:px-5 md:my-2
@@ -79,7 +81,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             })}
           </div>
         </div>
-        <div className='flex items-center  justify-end w-2/12 space-x-5 '>
+        <div className='flex items-center  justify-end w-7/12  sm:w-7/12 md:w-3/12 lg:w-2/12 space-x-5 '>
           {!darkMode ? (
             <PiCloudMoon
               className='cursor-pointer font-bold text-xl'
@@ -96,7 +98,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <Link
               to='contact'
               smooth={true}
-              className=' cursor-pointer font-poppins bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text- rounded-md text-gray-800 hover:text-black'
+              className=' cursor-pointer font-poppins bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 mr-0 md:mr-4 rounded-md text-gray-800 hover:text-black'
             >
               Contact
             </Link>

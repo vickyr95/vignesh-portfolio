@@ -12,8 +12,8 @@ const About = ({ darkMode, BG, bgLight }) => {
       name='about'
       className={`dark:bg-black  min-h-screen w-screen md:pt-0.5 pb-5 `}
     >
-      <div className='  mt-20'>
-        <h3 className=' text-3xl pb-5   text-center  font-bold tracking-widest capitalize'>
+      <div className='  mt-20 '>
+        <h3 className=' text-3xl pb-5 md:pb-0  text-center  font-bold tracking-widest '>
           ABOUT ME{' '}
         </h3>
 

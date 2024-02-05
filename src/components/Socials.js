@@ -5,22 +5,18 @@ import {
   RiLinkedinFill,
   RiFacebookFill,
 } from 'react-icons/ri';
-import { Link } from 'react-scroll';
+import { NavLink } from 'react-router-dom';
 const socials = [
+  //vickyr95.github.io
   {
-    path: '/',
-    icon: <RiGithubFill />,
-  },
-  {
-    path: '/',
+    name: 'linkedIn',
+    link: 'https://www.linkedin.com/in/vicky-rajendran?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     icon: <RiLinkedinFill />,
   },
+
   {
-    path: '/',
-    icon: <RiFacebookFill />,
-  },
-  {
-    path: '/',
+    name: 'mail',
+    link: 'https://mail.google.com/?view=cm&fs=1&to=connect@vigneshrajendran.in',
     icon: <RiMailAddFill />,
   },
 ];
@@ -31,13 +27,15 @@ const Socials = ({ containerStyles, iconsStyles }) => {
       //   className=' flex items-center justify-center lg:gap-16 gap-10'
     >
       {socials.map((item, index) => (
-        <Link
-          to={item.path}
+        <a
+          href={item.link}
           className={`${iconsStyles}`}
+          target='_blank'
+          rel='noopener noreferrer'
           // className='dark:text-gray-100 hover:text-cyan-500 dark:hover:text-pink-900'
         >
           {item.icon}
-        </Link>
+        </a>
       ))}
     </div>
   );

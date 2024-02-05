@@ -14,7 +14,7 @@ const Home = ({ darkMode, BG, bgLight }) => {
   return (
     <div
       name='home'
-      className={`darkMode ? ${BG} :'' bg-cover mt-0 min-h-screen`}
+      className={`darkMode ? ${BG}  :'' bg-cover mt-0 dark:min-h-screen`}
     >
       {darkMode ? (
         <div class='relative w-full max-w-lg '>
@@ -25,7 +25,7 @@ const Home = ({ darkMode, BG, bgLight }) => {
       ) : null}
 
       <div
-        className='pt-20 md:pt-36 lg:pt-36 px-5 md:px-10 min-h-screen w-screen flex flex-col 
+        className='pt-20 md:pt-36 lg:pt-36 px-5 md:px-10  w-screen flex flex-col 
       lg:flex-row  justify-between md:justify-center'
       >
         <div className='text-center p-0  md:p-0 lg:p-10    '>

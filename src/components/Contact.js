@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import contactDark from '../assets/illustration-dark.svg';
-import contactLight from '../assets/illustration-light.svg';
 import { IoIosMail } from 'react-icons/io';
 import { IoLocationOutline } from 'react-icons/io5';
 import { MdOutlinePhone } from 'react-icons/md';
@@ -33,10 +31,10 @@ const Contact = ({ darkMode, BG, bgLight }) => {
         opacity: 1,
       }}
       transition={{
-        duration: 3,
+        duration: 4,
       }}
     >
-      <div className={`container mx-auto  `}>
+      <div className={`container mx-auto `}>
         {/* {Text & image} */}
         <div className='grid lg:grid-cols-2 pt-12 lg:h-[420px] mb-6 md:mb-24 mx-10 md:mx-20'>
           <div className='flex flex-col justify-center'>
@@ -47,34 +45,47 @@ const Contact = ({ darkMode, BG, bgLight }) => {
             <h1 className='text-4xl font-bold max-w-md mb-8'>
               Let's Work Together.
             </h1>
-            <p className='subtitle max-w-[400px]'>
-              Download animations as Lottie JSON, dotLottie, GIF or MP4 for
-              personal or commercial use on web, apps, social media and more.
+            <p className=' max-w-[400px] leading-7  font-medium'>
+              Ready to elevate your robotics projects? Our expert robotics
+              engineers are here to help. Whether you're a researcher, a company
+              seeking automation solutions, or an enthusiast with a robotics
+              vision, we've got you covered. Contact us for collaborations,
+              consultations, or to discuss your specific needs. We're passionate
+              about advancing robotics technology and look forward to working
+              with you.
             </p>
           </div>
 
           <div
-            className={`hidden lg:flex w-full h-96 bg-contact_light dark:bg-contact_dark  bg-contain bg-no-repeat`}
+            className={`hidden lg:flex w-full h-96  bg-contact_light dark:bg-contact_dark  bg-contain bg-no-repeat`}
           ></div>
         </div>
 
         {/* Info & form */}
-        <div className='grid md:grid-cols-2    mx-10 md:mx-20  '>
+        <div className='grid md:grid-cols-2   mx-10 md:mx-20  '>
           {/* info text */}
-          <div className='flex flex-col gap-y-4  md:gap-y-10 mb-12 md:mb-24'>
+          <div className='flex flex-col gap-y-4 text-lg font-semibold md:gap-y-10 mb-12 md:mb-24'>
             {/* mail */}
-            <div className='flex items-center gap-x-8'>
-              <IoIosMail className='w-7 h-7' />
-              <div>vigneshatmmn@gmail.com</div>
-            </div>
-            <div className='flex items-center gap-x-8'>
+            <a
+              href='https://mail.google.com/?view=cm&fs=1&to=connect@vigneshrajendran.in'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <div className='flex items-center gap-x-8'>
+                <IoIosMail className='w-7 h-7' />
+
+                <div>connect@vigneshrajendran.in</div>
+              </div>
+            </a>
+
+            {/* <div className='flex items-center gap-x-8'>
               <MdOutlinePhone className='w-7 h-7' />
               <div>+91 9940650601</div>
-            </div>
-            <div className='flex items-center gap-x-8'>
+            </div> */}
+            {/* <div className='flex items-center gap-x-8'>
               <IoLocationOutline className='w-7 h-7' />
               <div>address</div>
-            </div>
+            </div> */}
           </div>
           <form className='' onSubmit={handleSubmit}>
             <h1 className='md:hidden flex text-xl font-bold  mb-5'>

@@ -8,7 +8,7 @@ import golfBallLocation from '../assets/project-images/golf.png';
 import ROS2 from '../assets/service-images/ROS2.png';
 import AIDeepLearning from '../assets/service-images/Town-Centre-video-sample-frame-Right-Yolact-result-Left-Mask-R-CNN-result_Q320.jpg';
 import computerVS from '../assets/service-images/gramener-computer-vision-solutions.webp';
-import AIproductLCM from '../assets/service-images/ai-life-cycle.png';
+// import AIproductLCM from '../assets/service-images/ai-life-cycle.png';
 import EHSFD from '../assets/service-images/640652c3ecec070a76f32338_embedded-systems.webp';
 import apps from '../assets/service-images/ios&android.png';
 import drone from '../assets/service-images/drone.png';
@@ -40,7 +40,7 @@ export const projectsData = [
     docs: 'https://docs.google.com/document/d/1SuyIXrSxxJrPCXlM9-UkNceJ6hnSyK3HCHM_Msdl5bQ/edit?usp=sharing',
   },
   {
-    title: 'Agri mobile robot',
+    title: 'Mobile robot',
     image: agriMobile,
     description:
       'As the lead for an extensive Agricultural Mobile Robot project, I played a pivotal role across departments, encompassing hardware selection, robot design, coding for control systems, and AI integration. Currently in the production stage, the semi-autonomous robot employs advanced AI techniques such as object detection, segmentation, and Lanenet for lane detection. Running on Jetson edge devices for efficient inference, the robot is equipped with a customized STM32-based processor for precise control, enabling automated tasks like deweeding and cultivation in agricultural fields.',
@@ -98,28 +98,28 @@ export const servicesData = [
     service: 'Programming in Python, C++ and C',
     icon: code,
   },
-  {
-    id: 8,
-    service: 'AI product lifecycle management',
-    icon: AIproductLCM,
-  },
 
   {
-    id: 9,
+    id: 8,
     service:
       'Sensor integration and control (lidar, radar, vision-based sensors)',
     icon: SIC,
   },
 
   {
-    id: 10,
+    id: 9,
     service: 'Embedded hardware solution and firmware development',
     icon: EHSFD,
   },
   {
-    id: 11,
+    id: 10,
     service:
       'AI Deep Learning models (YOLO, YOLACt, MIDAS, Mask RCNN) in real world application',
     icon: AIDeepLearning,
   },
+  // {
+  //   id: ,
+  //   service: 'AI product lifecycle management',
+  //   icon: AIproductLCM,
+  // },
 ];

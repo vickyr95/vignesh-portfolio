@@ -12,22 +12,22 @@ const Service = ({ darkMode, BG, bgLight }) => {
   return (
     <div
       name='service'
-      className={`!darkMode ? '' : ${BG}  bg-cover bg-right   dark:bg-left mt-10 
-       min-h-screen w-screen lg:mt-0 px-2 md:px-20 py-10 md:py-20 dark:text-gray-400 `}
+      className={`!darkMode ? '' : ${BG}     bg-right-bottom   mt-10 
+       min-h-screen w-screen lg:mt-0 px-2 md:px-20 py-10 md:py-20 dark:text-gray-200 `}
     >
       <div>
         <h3 className='text-3xl lg:pb-5  text-center  font-bold tracking-widest'>
-          Services I offer
+          SERVICES WE OFFER
         </h3>
 
         <p
-          className='text-md
-         md:text-2xl font-burtons bg-gradient-to-r from-blue-900 via-pink-950 to-amber-500 
+          className='text-md 
+         md:text-xl font-burtons bg-gradient-to-r from-blue-900 via-pink-950 to-amber-500 
          bg-clip-text text-transparent
          leading-8 px-7 md:px-0
-         py-2 text-center tracking-widest  dark:text-gray-400'
+         py-2 text-center tracking-widest  dark:text-gray-200'
         >
-          offering a comprehensive range of services, my team and I specialize
+          offering a comprehensive range of services, my team and i specialize
           in
         </p>
       </div>
@@ -51,7 +51,7 @@ const Service = ({ darkMode, BG, bgLight }) => {
             spaceBetween: 50,
             slidesPerGroup: 4,
             autoplay: {
-              delay: 5000,
+              delay: 1000,
               disableOnInteraction: false,
             },
           },
