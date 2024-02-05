@@ -4,7 +4,8 @@ import { IoLocationOutline } from 'react-icons/io5';
 import { MdOutlinePhone } from 'react-icons/md';
 import { FaPaperPlane } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-const Contact = ({ darkMode, BG, bgLight }) => {
+import emailjs from '@emailjs/browser';
+const Contact = () => {
   const [formDetails, setFormDetails] = useState({
     name: '',
     email: '',
@@ -14,11 +15,37 @@ const Contact = ({ darkMode, BG, bgLight }) => {
   let handleChange = (e) => {
     const { name, value } = e.target;
     console.log(name, value);
-    setFormDetails({ [name]: value });
+    setFormDetails({ ...formDetails, [name]: value });
   };
   let handleSubmit = (event) => {
     event.preventDefault();
     console.log(formDetails);
+    let templateParams = {
+      from_name: formDetails.name,
+      to_name: 'Vignesh',
+      from_email: formDetails.email,
+      to_email: 'connect@vigneshrajendran.in',
+      form_message: formDetails.message,
+    };
+    emailjs
+      .send('serviceId', 'templateId', templateParams, {
+        publicKey: 'YOUR_PUBLIC_KEY',
+      })
+      .then(
+        (response) => {
+          alert('Thank you. We will get back to you as soon as possible');
+          console.log('SUCCESS!', response.status, response.text);
+          setFormDetails({
+            name: '',
+            email: '',
+            message: '',
+          });
+        },
+        (err) => {
+          alert('OOPS..Sorry something went wrong.Try again.');
+          console.log('FAILED...', err);
+        }
+      );
   };
   return (
     <motion.section

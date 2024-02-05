@@ -6,7 +6,7 @@ import { HiLightningBolt } from 'react-icons/hi';
 import Skills from './Skills';
 import Experience from './Experience';
 
-const About = ({ darkMode, BG, bgLight }) => {
+const About = ({ darkMode }) => {
   return (
     <div
       name='about'

@@ -10,7 +10,7 @@ import Socials from './Socials';
 import { MdArrowRightAlt } from 'react-icons/md';
 import { Link } from 'react-scroll';
 
-const Home = ({ darkMode, BG, bgLight }) => {
+const Home = ({ darkMode, BG }) => {
   return (
     <div
       name='home'

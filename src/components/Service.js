@@ -8,7 +8,7 @@ import 'swiper/css/autoplay';
 
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
-const Service = ({ darkMode, BG, bgLight }) => {
+const Service = ({ BG }) => {
   return (
     <div
       name='service'

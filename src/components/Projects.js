@@ -9,7 +9,8 @@ import { SiGoogledocs } from 'react-icons/si';
 import { BsFillCollectionPlayFill } from 'react-icons/bs';
 import { slideIn } from '../utils/animation';
 import { motion } from 'framer-motion';
-const Projects = ({ darkMode, BG, bgLight }) => {
+
+const Projects = ({ darkMode, bgLight }) => {
   const projectDocs = [
     'https://docs.google.com/document/d/1Fs4Q088702WKSWxqk_I64KNVnjbhc-XCtmeiWr8KhjE/edit?usp=sharing',
     'https://docs.google.com/document/d/1lu8SxJW54AsNGmisKy9Y_Sbb7XFehvBvKMh23QD5C3c/edit?usp=sharing',
@@ -45,9 +46,9 @@ const Projects = ({ darkMode, BG, bgLight }) => {
              '
         >
           <motion.div
-            variants={slideIn('left', 'tween', 0.2, 1)}
+            variants={slideIn('left', 'tween', 0.1, 1)}
             initial='hidden'
-            animate='show' //
+            whileInView='show'
             className=' group flex relative  bg-violet-500 mx-auto md:mr-96  my-5
              rounded-2xl w-80 h-80 md:w-[28rem] md:h-56'
           >
@@ -100,7 +101,12 @@ const Projects = ({ darkMode, BG, bgLight }) => {
               </span>
             </div>
           </motion.div>
-          <div className=' group relative flex flex-row-reverse items-center  mx-auto bg-stone-700  my-5 w-80 h-80 md:w-[22rem] md:h-[20rem] md:ml-[26rem] rounded-2xl '>
+          <motion.div
+            variants={slideIn('right', 'tween', 0.1, 1)}
+            initial='hidden'
+            whileInView='show'
+            className=' group relative flex flex-row-reverse items-center  mx-auto bg-stone-700  my-5 w-80 h-80 md:w-[22rem] md:h-[20rem] md:ml-[26rem] rounded-2xl '
+          >
             {/* Image */}
             <div>
               <img
@@ -147,8 +153,11 @@ const Projects = ({ darkMode, BG, bgLight }) => {
                 June 2023
               </span>
             </div>
-          </div>
-          <div
+          </motion.div>
+          <motion.div
+            variants={slideIn('left', 'tween', 0.1, 1)}
+            initial='hidden'
+            whileInView='show'
             className='group flex relative items-center w-80 h-80 bg-gradient-to-br
              from-pink-700 to-purple-900 mx-auto md:mr-[32rem] my-5  rounded-2xl 
              md:w-80 md:h-60'
@@ -199,8 +208,13 @@ const Projects = ({ darkMode, BG, bgLight }) => {
                 2022- 2023
               </span>
             </div>
-          </div>
-          <div className='relative group flex flex-row-reverse items-center  mx-auto  bg-stone-700 my-5 w-80 h-80 md:w-[30rem] md:h-56 md:ml-96 rounded-2xl '>
+          </motion.div>
+          <motion.div
+            variants={slideIn('right', 'tween', 0.1, 1)}
+            initial='hidden'
+            whileInView='show'
+            className='relative group flex flex-row-reverse items-center  mx-auto  bg-stone-700 my-5 w-80 h-80 md:w-[30rem] md:h-56 md:ml-96 rounded-2xl '
+          >
             {/* Image */}
             <div>
               <img
@@ -247,7 +261,7 @@ const Projects = ({ darkMode, BG, bgLight }) => {
                 2021- 2022
               </span>
             </div>
-          </div>
+          </motion.div>
         </div>
         <ReactLink as={Link} to='/projects'>
           <p className='text-xl font-semibold rounded-md border-2 border-black p-4 mt-5 hover:bg-slate-400'>

@@ -17,12 +17,12 @@ const OverAllPage = ({ darkMode, BG, bgLight, setDarkMode }) => {
       //   exit={{ opacity: 1 }}
     >
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Home darkMode={darkMode} BG={BG} bgLight={bgLight} />
-      <About darkMode={darkMode} bgLight={bgLight} />
-      <Service darkMode={darkMode} BG={BG} bgLight={bgLight} />
-      <Projects darkMode={darkMode} BG={BG} bgLight={bgLight} />
-      <Contact darkMode={darkMode} BG={BG} bgLight={bgLight} />
-      <Footer darkMode={darkMode} BG={BG} bgLight={bgLight} />
+      <Home darkMode={darkMode} BG={BG} />
+      <About darkMode={darkMode} />
+      <Service BG={BG} />
+      <Projects darkMode={darkMode} bgLight={bgLight} />
+      <Contact />
+      <Footer darkMode={darkMode} />
     </motion.div>
   );
 };

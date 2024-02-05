@@ -18,7 +18,7 @@ const LINKS = [
 ];
 
 const currentYear = new Date().getFullYear();
-const Footer = ({ darkMode, BG, bgLight }) => {
+const Footer = ({ darkMode }) => {
   return (
     <footer
       className={` bg-amber-50/50   dark:bg-stone-900 bg-cover   relative    w-full py-0 md:py-5`}
