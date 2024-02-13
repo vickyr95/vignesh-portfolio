@@ -12,11 +12,11 @@ const Service = ({ BG }) => {
   return (
     <div
       name='service'
-      className={`!darkMode ? '' : ${BG}     bg-right-bottom   mt-10 
+      className={`!darkMode ? '' : ${BG}     bg-right-bottom    
        lg:min-h-screen w-screen lg:mt-0 px-2 md:px-20 py-10 md:py-5 lg:py-20 dark:text-gray-200 `}
     >
       <div>
-        <h3 className='text-3xl lg:pb-5  text-center  font-bold tracking-widest'>
+        <h3 className='text-3xl lg:pb-5 mt-5 md:mt-0 text-center  font-bold tracking-widest'>
           SERVICES WE OFFER
         </h3>
 
@@ -77,7 +77,7 @@ const Service = ({ BG }) => {
                   alt='service1'
                   className=' mx-auto rounded-md'
                 />
-               
+
                 <p className='text-xl font-bold py-5'>{item.service}</p>
               </div>
             </SwiperSlide>

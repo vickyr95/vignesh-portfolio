@@ -8,10 +8,7 @@ import { Link } from 'react-scroll';
 
 const Home = ({ darkMode, BG }) => {
   return (
-    <div
-      name='home'
-      className={`darkMode ? ${BG}  :'' bg-cover mt-0 dark:min-h-screen`}
-    >
+    <div name='home' className={`darkMode ? ${BG}  :'' bg-cover mt-0 `}>
       {darkMode ? (
         <div class='relative w-full max-w-lg '>
           <div class='absolute top-0 right-20   w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob  '></div>
