@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
-import AllProjects from './components/AllProjects';
-import OverAllPage from './components/OverAllPage';
+import AllProjects from './pages/AllProjects';
+import OverAllPage from './pages/OverAllPage';
 import { AnimatePresence } from 'framer-motion';
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const location = useLocation();
   const bgLight = !darkMode ? 'bg-light' : '';
   const BG = darkMode ? 'bg-dark' : '';
+
   useEffect(() => {
     // Apply the 'dark' class to the body based on the darkMode state
-
     document.body.classList.toggle('dark', darkMode);
   }, [darkMode]);
+
   return (
     <div className={`${darkMode ? 'dark' : ''} overflow-x-hidden`}>
       <main

@@ -1,37 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { MdOutlineEngineering } from 'react-icons/md';
-import { SiFreelancer } from 'react-icons/si';
-import { BsHandIndexFill, BsRobot } from 'react-icons/bs';
-const experienceData = [
-  {
-    title: 'Project Engineer',
-    description:
-      'Proficient in programming, troubleshooting, and configuring KUKA Robots, demonstrating a deep understanding of their functionalities. Conducted comprehensive traning session on KUKA Robots for clients from reputable manufacturing companies such as TATA, VW, Mercedes, fostering their proficiency in robot utilization.',
-    date: 'Dec 2017 - July 2019',
-    icon: <MdOutlineEngineering />,
-  },
-  {
-    title: 'Freelance Software Engineer',
-    description:
-      'As a freelance software, delved into the dynamic realm of robotics, crafting software with expertise in Robotics with ROS, Computer Vision, and AI. Collaborated closely with clients to co-create customised robotic software solutions, turning ideas into practical and innovative applications.',
-    date: 'July 2019',
-    icon: <SiFreelancer />,
-  },
-  {
-    title: 'Lead Robotics Engineer',
-    // description:
-    //   "I'm now a Lead Robotics Engineer, I'm embarking on an exciting entrepreneurial journey, spearheading the launch of a groundbreaking startup.",
-    description:
-      'Guide the comprehensive design and implementation of perception, advanced planning, navigation and software fro next-gen agricultural robotics platforms, showcasing expertise in ROS, computer Vision, AI, Deep Learning, Edge computing, Embedded electronics, and Hardware control.',
-    date: 'Now',
-    icon: <BsRobot />,
-  },
-];
+import { experienceData } from '../utils/data';
+
 const Experience = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
   console.log(hoveredItem);
@@ -53,7 +27,7 @@ const Experience = () => {
         {experienceData.map((item, index) => (
           <VerticalTimelineElement
             key={index}
-            className='vertical-timeline-element--work  dark:text-black cursor-pointer   '
+            className='vertical-timeline-element--work  dark:text-black    '
             contentStyle={{
               background: '#f3f4f6',
               boxShadow: 'none',
@@ -72,12 +46,13 @@ const Experience = () => {
             }}
           >
             <h3
-              className='font-bold'
+              className='font-bold  cursor-pointer  '
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
             >
               {item.title}
             </h3>
+
             <div>
               {hoveredItem === index && (
                 <div className={`hover-content `}>
@@ -85,7 +60,6 @@ const Experience = () => {
                   <p>{item.description}</p>
                 </div>
               )}
-              {/* <p>{item.description}</p> */}
             </div>
           </VerticalTimelineElement>
         ))}

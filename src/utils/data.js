@@ -8,7 +8,6 @@ import golfBallLocation from '../assets/project-images/golf.png';
 import ROS2 from '../assets/service-images/ROS2.png';
 import AIDeepLearning from '../assets/service-images/Town-Centre-video-sample-frame-Right-Yolact-result-Left-Mask-R-CNN-result_Q320.jpg';
 import computerVS from '../assets/service-images/gramener-computer-vision-solutions.webp';
-// import AIproductLCM from '../assets/service-images/ai-life-cycle.png';
 import EHSFD from '../assets/service-images/640652c3ecec070a76f32338_embedded-systems.webp';
 import apps from '../assets/service-images/ios&android.png';
 import drone from '../assets/service-images/drone.png';
@@ -16,6 +15,42 @@ import SIC from '../assets/service-images/AdobeStock_221128268-scaled.jpeg';
 import consult from '../assets/service-images/consulting.png';
 import code from '../assets/service-images/code.png';
 import industrialRobotics from '../assets/service-images/industrial-robotics.png';
+
+import { MdOutlineEngineering } from 'react-icons/md';
+import { SiFreelancer } from 'react-icons/si';
+import { BsRobot } from 'react-icons/bs';
+
+export const skillsData = [
+  'Python',
+  'Flutter',
+  'Figma Design',
+  'Machine Learning AI',
+  'Agile Metholologies',
+];
+
+export const experienceData = [
+  {
+    title: 'Project Engineer',
+    description:
+      'Proficient in programming, troubleshooting, and configuring KUKA Robots, demonstrating a deep understanding of their functionalities. Conducted comprehensive traning session on KUKA Robots for clients from reputable manufacturing companies such as TATA, VW, Mercedes, fostering their proficiency in robot utilization.',
+    date: 'Dec 2017 - July 2019',
+    icon: <MdOutlineEngineering />,
+  },
+  {
+    title: 'Freelance Software Engineer',
+    description:
+      'As a freelance software, delved into the dynamic realm of robotics, crafting software with expertise in Robotics with ROS, Computer Vision, and AI. Collaborated closely with clients to co-create customised robotic software solutions, turning ideas into practical and innovative applications.',
+    date: 'July 2019',
+    icon: <SiFreelancer />,
+  },
+  {
+    title: 'Lead Robotics Engineer',
+    description:
+      'Guide the comprehensive design and implementation of perception, advanced planning, navigation and software fro next-gen agricultural robotics platforms, showcasing expertise in ROS, computer Vision, AI, Deep Learning, Edge computing, Embedded electronics, and Hardware control.',
+    date: 'Now',
+    icon: <BsRobot />,
+  },
+];
 
 export const projectsData = [
   {
@@ -117,9 +152,4 @@ export const servicesData = [
       'AI Deep Learning models (YOLO, YOLACt, MIDAS, Mask RCNN) in real world application',
     icon: AIDeepLearning,
   },
-  // {
-  //   id: ,
-  //   service: 'AI product lifecycle management',
-  //   icon: AIproductLCM,
-  // },
 ];

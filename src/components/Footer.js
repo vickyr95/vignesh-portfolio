@@ -2,22 +2,6 @@ import React from 'react';
 import Socials from './Socials';
 import { Typography } from '@material-tailwind/react';
 
-const LINKS = [
-  {
-    title: 'Product',
-    items: ['Overview', 'Features', 'Solutions', 'Tutorials'],
-  },
-  {
-    title: 'Company',
-    items: ['About us', 'Careers', 'Press', 'News'],
-  },
-  {
-    title: 'Resource',
-    items: ['Blog', 'Newsletter', 'Events', 'Help center'],
-  },
-];
-
-const currentYear = new Date().getFullYear();
 const Footer = ({ darkMode }) => {
   return (
     <footer
@@ -56,31 +40,17 @@ const Footer = ({ darkMode }) => {
           <div className='z-50'>
             <Typography
               variant='h5'
-              className='mt-10 mb-2 md:mt-10 md:mb-6 text-xl font-bold z-50'
-            >
-              Vignesh- Lead Robotics Engineer
-            </Typography>
-            <Typography
-              variant='h5'
-              className=' mt-5 mb-10  text-xl text-stone-700 dark:text-pink-800 font-semibold z-50 '
+              className=' mt-10 mb-10  text-xl text-stone-900 dark:text-pink-800 font-semibold z-50 '
             >
               Let's connect and work together to make a difference.
             </Typography>
           </div>
         </div>
         <div className='mt-2 md:mt-6 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-end'>
-          {/* <Typography
-            variant='small'
-            className='mb-4 text-center font-normal text-blue-gray-900 md:mb-0'
-          >
-            &copy; {currentYear}{' '}
-            <a href='https://material-tailwind.com/'>Material Tailwind</a>. All
-            Rights Reserved.
-          </Typography> */}
           <div className='flex  items-center justify-center'>
             <Socials
               containerStyles='flex gap-x-10 mx-auto xl:mx-0 mb-4'
-              iconsStyles='text-2xl dark:text-gray-100 hover:text-orange-400 dark:hover:text-pink-900'
+              iconsStyles='text-2xl dark:text-gray-100 hover:text-cyan-400 dark:hover:text-pink-900'
             />
           </div>
         </div>

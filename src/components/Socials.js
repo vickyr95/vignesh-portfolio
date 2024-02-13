@@ -1,11 +1,6 @@
 import React from 'react';
-import {
-  RiGithubFill,
-  RiMailAddFill,
-  RiLinkedinFill,
-  RiFacebookFill,
-} from 'react-icons/ri';
-import { NavLink } from 'react-router-dom';
+import { RiMailAddFill, RiLinkedinFill } from 'react-icons/ri';
+
 const socials = [
   //vickyr95.github.io
   {
@@ -22,17 +17,13 @@ const socials = [
 ];
 const Socials = ({ containerStyles, iconsStyles }) => {
   return (
-    <div
-      className={`${containerStyles}`}
-      //   className=' flex items-center justify-center lg:gap-16 gap-10'
-    >
+    <div className={`${containerStyles}`}>
       {socials.map((item, index) => (
         <a
           href={item.link}
           className={`${iconsStyles}`}
           target='_blank'
           rel='noopener noreferrer'
-          // className='dark:text-gray-100 hover:text-cyan-500 dark:hover:text-pink-900'
         >
           {item.icon}
         </a>

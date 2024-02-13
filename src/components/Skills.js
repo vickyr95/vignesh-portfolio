@@ -1,28 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.05 * index,
-    },
-  }),
-};
+import { fadeInAnimationVariants } from '../utils/animation';
+import { skillsData } from '../utils/data';
+
 const Skills = () => {
-  const skillsData = [
-    'Python',
-    'Flutter',
-    'Figma Design',
-    'Machine Learning AI',
-    'Agile Metholologies',
-  ];
   return (
-    <section className='my-10 md:mb-10  px-5'>
+    <section className='my-10 md:mb-10 md:mt-0  px-5 '>
       <h3 className=' text-xl md:pb-7 my-10 md:my-0 text-center  font-bold tracking-widest'>
         MySkills
       </h3>

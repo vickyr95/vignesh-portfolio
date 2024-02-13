@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { BsMoonStarsFill } from 'react-icons/bs';
+
 import {
   RxHamburgerMenu,
   RxCross2,
-  RxCrossCircled,
-  RxMoon,
+  
 } from 'react-icons/rx';
 import { Link } from 'react-scroll';
 import { LuCloudSun } from 'react-icons/lu';
 import { PiCloudMoon } from 'react-icons/pi';
-import initial from '../assets/initial-vr.png';
+import initial from '../assets/images/initial-vr.png';
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [menuVisible, setMenuVisible] = useState(false);
   const [closeMenu, setCloseMenu] = useState(false);
@@ -58,7 +57,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <div className='flex  justify-between items-center  md:w-9/12 lg:w-11/12'>
           <div>
             <img src={initial} alt='initial-vr' className='w-10 h-10 ml-4 ' />
-            {/* <h1 className='text-3xl font-cursive ml-4'>VR</h1> */}
+           
           </div>
           <div className='hidden md:flex space-x-5  font-poppins  dark:text-white'>
             {navItems.map((item) => {
@@ -120,13 +119,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           menuVisible ? 'block' : 'hidden'
         }`}
       >
-        {/* <Link
-          to='about'
-          className=' cursor-pointer block py-3 ps-10 text-lg text-gray-800
- hover:text-black'
-        >
-          Home
-        </Link> */}
+        
         {navItems.map((item) => {
           return (
             <Link
