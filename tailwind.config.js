@@ -6,12 +6,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        light: 'url("/src/assets/images/orangeGreen.png")', // Define light mode background image
-        dark: 'url("/src/assets/images/banner-bg.png")', // Define dark mode background image
+        light: 'url("/src/assets/images/orangeGreen.png")', // light mode background image
+        dark: 'url("/src/assets/images/banner-bg.png")', // dark mode background image
         contact_light: 'url("/src/assets/images/illustration-dark.svg")',
         contact_dark: 'url("/src/assets/images/contact-img.svg")',
-        // project_color_dark1: 'url("/src/assets/images/color-sharp.png")',
-        // project_color_dark2: 'url("/src/assets/images/color-sharp2.png")',
       },
 
       fontFamily: {
@@ -19,8 +17,6 @@ module.exports = {
         poppins: ['Poppins', 'sans-serif'],
         klee_one: ['klee-one', 'cursive'],
         cursive: 'cursive',
-        // centraNo2_Medium: ['CentraNo2-Medium'],
-        centraNo2_Book: ['centrano2-book', 'cursive'],
       },
     },
 

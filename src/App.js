@@ -12,7 +12,7 @@ function App() {
   const BG = darkMode ? 'bg-dark' : '';
 
   useEffect(() => {
-    // Apply the 'dark' class to the body based on the darkMode state
+    // to apply the 'dark' class to the body based on the darkMode state
     document.body.classList.toggle('dark', darkMode);
   }, [darkMode]);
 

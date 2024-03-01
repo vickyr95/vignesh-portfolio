@@ -47,7 +47,7 @@ export const experienceData = [
     title: 'Lead Robotics Engineer',
     description:
       'Guide the comprehensive design and implementation of perception, advanced planning, navigation and software fro next-gen agricultural robotics platforms, showcasing expertise in ROS, computer Vision, AI, Deep Learning, Edge computing, Embedded electronics, and Hardware control.',
-    date: 'Now',
+    date: 'Current',
     icon: <BsRobot />,
   },
 ];
