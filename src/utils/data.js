@@ -128,28 +128,28 @@ export const servicesData = [
     service: 'Robotic and automation solution consultation',
     icon: consult,
   },
-  {
-    id: 7,
-    service: 'Programming in Python, C++ and C',
-    icon: code,
-  },
 
   {
-    id: 8,
+    id: 7,
     service:
       'Sensor integration and control (lidar, radar, vision-based sensors)',
     icon: SIC,
   },
 
   {
-    id: 9,
+    id: 8,
     service: 'Embedded hardware solution and firmware development',
     icon: EHSFD,
   },
   {
-    id: 10,
+    id: 9,
     service:
       'AI Deep Learning models (YOLO, YOLACt, MIDAS, Mask RCNN) in real world application',
     icon: AIDeepLearning,
   },
+  // {
+  //   id: 10,
+  //   service: 'Programming in Python, C++ and C',
+  //   icon: code,
+  // },
 ];
