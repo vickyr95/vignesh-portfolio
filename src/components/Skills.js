@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeInAnimationVariants } from '../utils/animation';
-import { skillsData } from '../utils/data';
-
+// import { skillsData } from '../utils/data';
+/*
 const Skills = () => {
   return (
     <section className='my-10 md:mb-10 md:mt-0  px-5 '>
@@ -31,3 +31,4 @@ const Skills = () => {
 };
 
 export default Skills;
+*/

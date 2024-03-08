@@ -1,7 +1,7 @@
 import React from 'react';
 import s1 from '../assets/images/dev-ed-wave.png';
 
-import Skills from '../components/Skills';
+// import Skills from '../components/Skills';
 import Experience from '../components/Experience';
 
 const About = ({ darkMode }) => {
@@ -57,7 +57,7 @@ const About = ({ darkMode }) => {
           </div>
         </div>
         {/* ---Skills---- */}
-        <Skills />
+        {/* <Skills /> */}
         {/* ---Experience---- */}
         <Experience />
       </div>

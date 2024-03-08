@@ -6,6 +6,7 @@ import agriMobile from '../assets/project-images/agriMobile.jpg';
 import golfBallLocation from '../assets/project-images/golf.png';
 
 import ROS2 from '../assets/service-images/ROS2.png';
+import mobilerobot from '../assets/service-images/mobile-robot-dev.jpeg';
 import AIDeepLearning from '../assets/service-images/Town-Centre-video-sample-frame-Right-Yolact-result-Left-Mask-R-CNN-result_Q320.jpg';
 import computerVS from '../assets/service-images/gramener-computer-vision-solutions.webp';
 import EHSFD from '../assets/service-images/640652c3ecec070a76f32338_embedded-systems.webp';
@@ -13,20 +14,20 @@ import apps from '../assets/service-images/ios&android.png';
 import drone from '../assets/service-images/drone.png';
 import SIC from '../assets/service-images/AdobeStock_221128268-scaled.jpeg';
 import consult from '../assets/service-images/consulting.png';
-import code from '../assets/service-images/code.png';
+// import code from '../assets/service-images/code.png';
 import industrialRobotics from '../assets/service-images/industrial-robotics.png';
 
 import { MdOutlineEngineering } from 'react-icons/md';
 import { SiFreelancer } from 'react-icons/si';
 import { BsRobot } from 'react-icons/bs';
 
-export const skillsData = [
-  'Python',
-  'Flutter',
-  'Figma Design',
-  'Machine Learning AI',
-  'Agile Metholologies',
-];
+// export const skillsData = [
+//   'Python',
+//   'Flutter',
+//   'Figma Design',
+//   'Machine Learning AI',
+//   'Agile Metholologies',
+// ];
 
 export const experienceData = [
   {
@@ -100,56 +101,61 @@ export const projectsData = [
 export const servicesData = [
   {
     id: 1,
-    service: 'ROS1 and ROS2 real-time and simultion expertise',
-    icon: ROS2,
+    service:
+      'Mobile robot development',
+    icon: mobilerobot,
   },
   {
     id: 2,
-    service: 'Android and iOS app development',
-    icon: apps,
-  },
-  {
-    id: 3,
-    service: 'Industrial robotics programming',
-    icon: industrialRobotics,
-  },
-  {
-    id: 4,
-    service: 'Drone programming and control',
-    icon: drone,
-  },
-  {
-    id: 5,
     service: 'Computer vision solutions',
     icon: computerVS,
   },
   {
-    id: 6,
-    service: 'Robotic and automation solution consultation',
-    icon: consult,
+    id: 3,
+    service:
+      'AI Deep Learning computer vision models',
+    icon: AIDeepLearning,
   },
-
+  {
+    id: 4,
+    service: 'Industrial robotics programming',
+    icon: industrialRobotics,
+  },
+  {
+    id: 5,
+    service: 'Drone programming and control',
+    icon: drone,
+  },
+  {
+    id: 6,
+    service: 'ROS1 and ROS2 real-time and simulation expertise',
+    icon: ROS2,
+  },
   {
     id: 7,
+    service: 'Android and iOS app development',
+    icon: apps,
+  },
+  {
+    id: 8,
     service:
       'Sensor integration and control (lidar, radar, vision-based sensors)',
     icon: SIC,
   },
-
   {
-    id: 8,
+    id: 9,
     service: 'Embedded hardware solution and firmware development',
     icon: EHSFD,
   },
   {
-    id: 9,
-    service:
-      'AI Deep Learning models (YOLO, YOLACt, MIDAS, Mask RCNN) in real world application',
-    icon: AIDeepLearning,
+    id: 10,
+    service: 'Robotic and automation solution consultation',
+    icon: consult,
   },
   // {
   //   id: 10,
   //   service: 'Programming in Python, C++ and C',
   //   icon: code,
   // },
+  
 ];

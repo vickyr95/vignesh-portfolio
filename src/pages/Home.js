@@ -37,9 +37,15 @@ const Home = ({ darkMode, BG }) => {
               Robotics Engineer
             </h3>
             <p className='text-lg  leading-10 px-2 py-4 text-gray-800  dark:text-gray-100'>
-              As a devoted Robotics Engineer, I dive deep into shaping the
-              forefront of futuristic robotics, seamlessly merging technical
-              prowess with an ardent passion and relentless enthusiasm.
+              I'm a practical Robotics Engineer, quietly working on
+              the next-gen robots with a touch of passion.
+              <br></br>
+              Solving business puzzles is my gig – armed with
+              nothing but robots, AI, and a sprinkle of computer
+              vision magic! 
+              <br></br>
+              It's a simple pursuit, but I'm eager to make a positive
+              impact along the way.
             </p>
           </div>
           <div className='text-2xl flex flex-col md:flex-row items-center justify-center text-gray-900 gap-16 py-5 '>

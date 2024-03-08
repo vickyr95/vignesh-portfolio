@@ -17,7 +17,7 @@ const Service = ({ BG }) => {
     >
       <div>
         <h3 className='text-3xl lg:pb-5 mt-5 md:mt-0 text-center  font-bold tracking-widest'>
-          SERVICES WE OFFER
+          SERVICES OFFERED
         </h3>
 
         <p
