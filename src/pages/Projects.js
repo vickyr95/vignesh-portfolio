@@ -13,7 +13,7 @@ import { motion } from 'framer-motion';
 const Projects = ({ darkMode, bgLight }) => {
   const projectDocs = [
     'https://docs.google.com/document/d/1Fs4Q088702WKSWxqk_I64KNVnjbhc-XCtmeiWr8KhjE/edit?usp=sharing',
-    'https://docs.google.com/document/d/1lu8SxJW54AsNGmisKy9Y_Sbb7XFehvBvKMh23QD5C3c/edit?usp=sharing',
+    'https://github.com/vickyr95/Project_ADAS_BEVfusion',
     'https://docs.google.com/document/d/1cG85otjLuEFobUk7umrOviuwhh5ggVEo8K-AV8MN-dQ/edit?usp=sharing',
     'https://docs.google.com/document/d/1SuyIXrSxxJrPCXlM9-UkNceJ6hnSyK3HCHM_Msdl5bQ/edit?usp=sharing',
   ];

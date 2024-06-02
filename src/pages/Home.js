@@ -19,35 +19,27 @@ const Home = ({ darkMode, BG }) => {
 
       <div
         className='pt-20 md:pt-36 lg:pt-36 px-5 md:px-10  w-screen flex flex-col 
-      lg:flex-row  justify-between md:justify-center'
-      >
-        <div className='text-center p-0  md:p-0 lg:p-10    '>
-          <div className=''>
-            <h2 className='text-4xl font-cursive bg-gradient-to-r from-fuchsia-700 via-pink-900 to-indigo-950 dark:text-orange-200  bg-clip-text text-transparent  py-2'>
-              <span className=' text-lg text-black dark:text-gray-100 '>
-                Hai,{' '}
-                <span className='h-7'>
-                  <PiHandWavingDuotone className='inline w-7 h-10 ' />
-                </span>{' '}
-                I am{' '}
-              </span>
-              Vignesh Rajendran
-            </h2>
-            <h3 className='text-2xl  tracking-widest py-2'>
-              Robotics Engineer
-            </h3>
-            <p className='text-lg  leading-10 px-2 py-4 text-gray-800  dark:text-gray-100'>
-              I'm a practical Robotics Engineer, quietly working on
-              the next-gen robots with a touch of passion.
-              <br></br>
-              Solving business puzzles is my gig – armed with
-              nothing but robots, AI, and a sprinkle of computer
-              vision magic! 
-              <br></br>
-              It's a simple pursuit, but I'm eager to make a positive
-              impact along the way.
-            </p>
-          </div>
+      lg:flex-row  justify-between md:justify-center'>
+        <div className='text-left p-0  md:p-0 lg:p-10'>
+        <div className=''>
+        <h3 className='text-4xl font-bold bg-gradient-to-r from-fuchsia-700 via-pink-900 to-indigo-950 dark:text-orange-200  bg-clip-text text-transparent  py-2'>
+          Innovative Robotics Solutions for Modern Challenges.
+        </h3>
+
+        <p className='text-2xl leading-10 px-2 py-4 text-gray-800 dark:text-gray-100'>
+        Are you facing difficulties integrating advanced AI and robotics into your business operations?
+        <br></br>
+        <br></br>
+        If you're creating a new product, I can help you manage and solve challenges with a quick POC, followed by iterative development to ensure efficient delivery.
+          <br></br>
+          <br></br>
+          I'm&nbsp; 
+          <span className='text-2xl font-bold bg-gradient-to-r from-fuchsia-700 via-pink-900 to-indigo-950 dark:text-orange-200  bg-clip-text text-transparent  py-2'>
+          Vignesh Rajendran
+        </span>
+        , Let's work together in transforming your business with state-of-the-art robotics and AI solutions.
+        </p>
+      </div>
           <div className='text-2xl flex flex-col md:flex-row items-center justify-center text-gray-900 gap-16 py-5 '>
             <div className=' md:ml-10'>
               <Link

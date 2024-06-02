@@ -12,7 +12,6 @@ import computerVS from '../assets/service-images/gramener-computer-vision-soluti
 import EHSFD from '../assets/service-images/640652c3ecec070a76f32338_embedded-systems.webp';
 import apps from '../assets/service-images/ios&android.png';
 import drone from '../assets/service-images/drone.png';
-import SIC from '../assets/service-images/AdobeStock_221128268-scaled.jpeg';
 import consult from '../assets/service-images/consulting.png';
 // import code from '../assets/service-images/code.png';
 import industrialRobotics from '../assets/service-images/industrial-robotics.png';
@@ -31,26 +30,26 @@ import { BsRobot } from 'react-icons/bs';
 
 export const experienceData = [
   {
-    title: 'Project Engineer',
+    title: 'Lead Robotics Engineer | FarmRobo Technologies Pvt Ltd',
     description:
-      'Proficient in programming, troubleshooting, and configuring KUKA Robots, demonstrating a deep understanding of their functionalities. Conducted comprehensive traning session on KUKA Robots for clients from reputable manufacturing companies such as TATA, VW, Mercedes, fostering their proficiency in robot utilization.',
-    date: 'Dec 2017 - July 2019',
-    icon: <MdOutlineEngineering />,
+      'Lead the design and implementation of advanced agricultural robotic platforms, leveraging expertise in ROS, AI, Computer Vision, and Edge Computing, while directing cross-functional teams in AI, electronics, firmware, and full-stack development.',
+    date: 'Nov 2020 - Present',
+    icon: <BsRobot />,
   },
   {
-    title: 'Freelance Software Engineer',
+    title: 'Software Engineer - Robotics | Freelance',
     description:
-      'As a freelance software, delved into the dynamic realm of robotics, crafting software with expertise in Robotics with ROS, Computer Vision, and AI. Collaborated closely with clients to co-create customised robotic software solutions, turning ideas into practical and innovative applications.',
-    date: 'July 2019',
+      'As a freelance software engineer, developed robotics software with expertise in ROS, Computer Vision, and AI, shaped project architecture, established standards, refined processes, and translated technical needs into project designs while collaborating closely with clients to create customized robotic solutions.',
+    date: 'Jul 2019 - Dec 2020',
     icon: <SiFreelancer />,
   },
   {
-    title: 'Lead Robotics Engineer',
+    title: 'Project Engineer | KUKA Robotics',
     description:
-      'Guide the comprehensive design and implementation of perception, advanced planning, navigation and software fro next-gen agricultural robotics platforms, showcasing expertise in ROS, computer Vision, AI, Deep Learning, Edge computing, Embedded electronics, and Hardware control.',
-    date: 'Current',
-    icon: <BsRobot />,
-  },
+      'Proficient in programming, troubleshooting, and configuring KUKA Robots, conducted training for clients like TATA, VW, and Mercedes, designed applications using advanced Robot Simulation software, and managed projects in Spot and Arc Welding, Laser Cutting, Computer Vision, and Material Handling.',
+    date: 'Dec 2017 - July 2019',
+    icon: <MdOutlineEngineering />,
+  }
 ];
 
 export const projectsData = [
@@ -87,7 +86,7 @@ export const projectsData = [
     image: ADAS,
     description:
       'Led the development of a comprehensive simulation for an Advanced Driver Assistance System (ADAS) utilizing lidar and camera data in Autoware. Achievements include the implementation of real-time map integration, lane detection, car speed assessment, detection of various vehicle types, tracking of other vehicle speeds, and human detection. The simulation transitioned from ROS2 and RVIZ to Autoware to align with client specifications, ultimately realizing the goal of creating a fully autonomous car in a simulated environment.',
-    docs: 'https://docs.google.com/document/d/1lu8SxJW54AsNGmisKy9Y_Sbb7XFehvBvKMh23QD5C3c/edit?usp=sharing',
+    docs: 'https://github.com/vickyr95/Project_ADAS_BEVfusion',
   },
   {
     title: 'Golf ball detection',
@@ -107,55 +106,43 @@ export const servicesData = [
   },
   {
     id: 2,
-    service: 'Computer vision solutions',
-    icon: computerVS,
-  },
-  {
-    id: 3,
     service:
-      'AI Deep Learning computer vision models',
+      'AI & Computer Vision solutions',
     icon: AIDeepLearning,
   },
   {
-    id: 4,
-    service: 'Industrial robotics programming',
-    icon: industrialRobotics,
-  },
-  {
-    id: 5,
+    id: 3,
     service: 'Drone programming and control',
     icon: drone,
   },
   {
-    id: 6,
-    service: 'ROS1 and ROS2 real-time and simulation expertise',
+    id: 4,
+    service: 'ROS1 and ROS2 Programming',
     icon: ROS2,
   },
   {
-    id: 7,
-    service: 'Android and iOS app development',
+    id: 5,
+    service: 'Robot Simulation using Isaac Sim/Gazebo',
+    icon: computerVS,
+  },
+  {
+    id: 6,
+    service: 'Mobile and Web development',
     icon: apps,
   },
   {
-    id: 8,
-    service:
-      'Sensor integration and control (lidar, radar, vision-based sensors)',
-    icon: SIC,
-  },
-  {
-    id: 9,
-    service: 'Embedded hardware solution and firmware development',
+    id: 7,
+    service: 'Embedded hardware/Firmware solution',
     icon: EHSFD,
   },
   {
-    id: 10,
+    id: 8,
+    service: 'Industrial robots/PLC programming',
+    icon: industrialRobotics,
+  },
+  {
+    id: 9,
     service: 'Robotic and automation solution consultation',
     icon: consult,
-  },
-  // {
-  //   id: 10,
-  //   service: 'Programming in Python, C++ and C',
-  //   icon: code,
-  // },
-  
+  }
 ];

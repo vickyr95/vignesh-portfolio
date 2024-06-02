@@ -72,13 +72,16 @@ const Contact = () => {
               Let's Work Together.
             </h1>
             <p className=' max-w-[400px] leading-7  font-medium'>
-              Ready to elevate your robotics projects? Our expert robotics
-              engineers are here to help. Whether you're a researcher, a company
-              seeking automation solutions, or an enthusiast with a robotics
-              vision, we've got you covered. Contact us for collaborations,
-              consultations, or to discuss your specific needs. We're passionate
-              about advancing robotics technology and look forward to working
-              with you.
+              Ready to elevate your robotics projects? 
+              <br></br>
+              <br></br>
+              Our expert robotics engineers are here to help. 
+              <br></br>
+              <br></br>
+              Whether you're a researcher, a company seeking automation solutions, or an enthusiast with a robotics vision, we've got you covered. 
+              <br></br>
+              <br></br>
+              Contact us for collaborations, consultations, or to discuss your specific needs.
             </p>
           </div>
 

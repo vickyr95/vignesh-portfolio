@@ -20,8 +20,8 @@ const OverAllPage = ({ darkMode, BG, bgLight, setDarkMode }) => {
       <Home darkMode={darkMode} BG={BG} />
 
       <Service BG={BG} />
-      <Projects darkMode={darkMode} bgLight={bgLight} />
       <About darkMode={darkMode} />
+      <Projects darkMode={darkMode} bgLight={bgLight} /> 
       <Contact />
       <Footer darkMode={darkMode} />
     </motion.div>
