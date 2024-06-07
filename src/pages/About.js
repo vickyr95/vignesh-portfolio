@@ -1,5 +1,5 @@
 import React from 'react';
-import s1 from '../assets/images/about_bg.png';
+import s1 from '../assets/images/about_bg.gif';
 // import Skills from '../components/Skills';
 import Experience from '../components/Experience';
 
@@ -10,7 +10,7 @@ const About = ({ darkMode }) => {
       className={`dark:bg-black min-h-screen w-screen mb-0 lg:mb-20 md:pt-0.5 pb-5`}
     >
       <div className='mt-20'>
-        <h3 className='text-3xl pb-5 md:pb-0 text-center font-bold tracking-widest'>
+        <h3 className=' text-2xl  lg:pb-10  text-center  font-bold tracking-widest'>
           ABOUT ME
         </h3>
 

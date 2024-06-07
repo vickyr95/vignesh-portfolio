@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 
 const Projects = ({ darkMode, bgLight }) => {
   const projectDocs = [
-    'https://docs.google.com/document/d/1Fs4Q088702WKSWxqk_I64KNVnjbhc-XCtmeiWr8KhjE/edit?usp=sharing',
+    'https://github.com/vickyr95/Project_Golfball_Tracking',
     'https://github.com/vickyr95/Project_ADAS_BEVfusion',
     'https://docs.google.com/document/d/1cG85otjLuEFobUk7umrOviuwhh5ggVEo8K-AV8MN-dQ/edit?usp=sharing',
     'https://docs.google.com/document/d/1SuyIXrSxxJrPCXlM9-UkNceJ6hnSyK3HCHM_Msdl5bQ/edit?usp=sharing',
@@ -32,13 +32,13 @@ const Projects = ({ darkMode, bgLight }) => {
       <div className=' flex flex-col items-center mx-auto  '>
         {/* Head Section */}
         <div className=' flex flex-col gap-4 items-center justify-center max-w-35rem mx-auto  '>
-          <span className=' text-black dark:text-gray-200 text-xl font-bold '>
-            PROJECTS
-          </span>
-          <span className=' text-black dark:text-gray-200 text-xl text-center mx-5 font-semibold '>
+        <h3 className=' text-2xl  lg:pb-10  text-center  font-bold tracking-widest'>
+        PROJECTS
+      </h3>
+          {/* <span className=' text-black dark:text-gray-200 text-xl text-center mx-5 font-semibold '>
             Embark on a journey of innovation and efficiency with our latest
             robotics engineering projects.
-          </span>
+          </span> */}
         </div>
         <div
           className=' flex flex-col items-center gap-4  py-0 
@@ -47,6 +47,59 @@ const Projects = ({ darkMode, bgLight }) => {
         >
           <motion.div
             variants={slideIn('left', 'tween', 0.2, 1)}
+            initial='initial'
+            whileInView='animate'
+            className=' group relative flex flex-row-reverse items-center  mx-auto bg-stone-700  my-5 w-80 h-80 md:w-[22rem] md:h-[20rem] md:ml-[26rem] rounded-2xl '
+          >
+            {/* Image */}
+            <div>
+              <img
+                src={ADAS}
+                alt='projectimage'
+                className='w-full h-[20rem] rounded-2xl  '
+              />
+              <div className='absolute top-20 left-16 md:top-32  md:left-20 flex gap-20  z-10'>
+                <a
+                  href={projectDocs[1]}
+                  rel='noreferrer'
+                  target='_blank'
+                  className='bg-black/50 w-[54px] h-[54px] rounded-full flex justify-center 
+              items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100
+               transition-all 
+            duration-200 '
+                >
+                  <SiGoogledocs className='text-white' />
+                </a>
+                <a
+                  href='#'
+                  className='bg-black/50 w-[54px] h-[54px] rounded-full flex justify-center 
+              items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100
+               transition-all 
+            duration-200 '
+                >
+                  <BsFillCollectionPlayFill className='text-white' />
+                </a>
+              </div>
+            </div>
+            {/* Project name */}
+            <div className=' absolute  top-36 left-10 md:top-41 md:-left-[14rem]  flex flex-col gap-2 items-start md:items-end '>
+              <span
+                className=' font-poppins text-2xl md:text-4xl  font-bold dark:text-gray-900 border-none  
+                 rounded-md shadow-lg p-4 bg-yellow-100/50'
+              >
+                ADAS-BEVfusion
+              </span>
+              <span
+                className='font-klee_one text-2xl  md:text-3xl  font-bold  dark:text-gray-900
+                border-none   
+                rounded-md shadow-lg p-4 bg-yellow-100/50'
+              >
+                June 2023
+              </span>
+            </div>
+          </motion.div>
+          <motion.div
+            variants={slideIn('right', 'tween', 0.2, 1)}
             initial='initial'
             whileInView='animate'
             className=' group flex relative  bg-violet-500 mx-auto md:mr-96  my-5
@@ -101,59 +154,7 @@ const Projects = ({ darkMode, bgLight }) => {
               </span>
             </div>
           </motion.div>
-          <motion.div
-            variants={slideIn('right', 'tween', 0.2, 1)}
-            initial='initial'
-            whileInView='animate'
-            className=' group relative flex flex-row-reverse items-center  mx-auto bg-stone-700  my-5 w-80 h-80 md:w-[22rem] md:h-[20rem] md:ml-[26rem] rounded-2xl '
-          >
-            {/* Image */}
-            <div>
-              <img
-                src={ADAS}
-                alt='projectimage'
-                className='w-full h-[20rem] rounded-2xl  '
-              />
-              <div className='absolute top-20 left-16 md:top-32  md:left-20 flex gap-20  z-10'>
-                <a
-                  href={projectDocs[1]}
-                  rel='noreferrer'
-                  target='_blank'
-                  className='bg-black/50 w-[54px] h-[54px] rounded-full flex justify-center 
-              items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100
-               transition-all 
-            duration-200 '
-                >
-                  <SiGoogledocs className='text-white' />
-                </a>
-                <a
-                  href='#'
-                  className='bg-black/50 w-[54px] h-[54px] rounded-full flex justify-center 
-              items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100
-               transition-all 
-            duration-200 '
-                >
-                  <BsFillCollectionPlayFill className='text-white' />
-                </a>
-              </div>
-            </div>
-            {/* Project name */}
-            <div className=' absolute  top-36 left-10 md:top-41 md:-left-[14rem]  flex flex-col gap-2 items-start md:items-end '>
-              <span
-                className=' font-poppins text-2xl md:text-4xl  font-bold dark:text-gray-900 border-none  
-                 rounded-md shadow-lg p-4 bg-yellow-100/50'
-              >
-                ADAS-BEVfusion
-              </span>
-              <span
-                className='font-klee_one text-2xl  md:text-3xl  font-bold  dark:text-gray-900
-                border-none   
-                rounded-md shadow-lg p-4 bg-yellow-100/50'
-              >
-                June 2023
-              </span>
-            </div>
-          </motion.div>
+          
           <motion.div
             variants={slideIn('left', 'tween', 0.2, 1)}
             initial='initial'

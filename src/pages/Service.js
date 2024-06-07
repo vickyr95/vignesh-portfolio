@@ -12,23 +12,18 @@ const Service = ({ BG }) => {
   return (
     <div
       name='service'
-      className={`!darkMode ? '' : ${BG}     bg-right-bottom    
-       lg:min-h-screen w-screen lg:mt-0 px-2 md:px-20 py-10 md:py-5 lg:py-20 dark:text-gray-200 `}
+      className={`!darkMode ? '' : ${BG} bg-right-bottom lg:min-h-screen w-screen lg:mt-0 px-2 md:px-20 py-10 md:py-5 lg:py-20 dark:text-gray-200`}
     >
       <div>
-        <h3 className='text-3xl lg:pb-5 mt-5 md:mt-0 text-center  font-bold tracking-widest'>
+        <h3 className='text-3xl lg:pb-5 mt-5 md:mt-0 text-center font-bold tracking-widest'>
           SERVICES OFFERED
         </h3>
 
         <p
-          className='text-md 
-         md:text-xl font-burtons bg-gradient-to-r from-blue-900 via-pink-950 to-amber-500 
-         bg-clip-text text-transparent
-         leading-8 px-7 md:px-0
-         py-2 text-center tracking-widest  dark:text-gray-200'
+          className='text-md md:text-xl font-burtons bg-gradient-to-r from-blue-900 via-pink-950 to-amber-500 
+         bg-clip-text text-transparent leading-8 px-7 md:px-0 py-2 text-center tracking-widest dark:text-gray-200'
         >
-          offering a comprehensive range of services, my team and i specialize
-          in
+          offering a comprehensive range of services, my team and i specialize in
         </p>
       </div>
       <Swiper
@@ -36,48 +31,38 @@ const Service = ({ BG }) => {
           640: {
             slidesPerView: 1,
             spaceBetween: 30,
-            slidesPerGroup: 2,
-            autoplay: {
-              delay: 2000,
-              disableOnInteraction: false,
-            },
+            slidesPerGroup: 1,
           },
           768: {
             slidesPerView: 2,
             spaceBetween: 40,
             slidesPerGroup: 2,
-            autoplay: {
-              delay: 2000,
-              disableOnInteraction: false,
-            },
           },
           1024: {
             slidesPerView: 4,
             spaceBetween: 50,
             slidesPerGroup: 4,
-            autoplay: {
-              delay: 1000,
-              disableOnInteraction: false,
-            },
           },
         }}
-        modules={[Pagination, Navigation, Autoplay]}
-        pagination={{ clickable: 'true' }}
-        className='mt-10  '
+        autoplay={{
+          delay: 1500, // Adjust the delay as needed
+          disableOnInteraction: false,
+        }}
+        modules={[Pagination, Autoplay]}
+        pagination={{ clickable: true }}
+        className='mt-10'
       >
         {servicesData.map((item, index) => {
           return (
             <SwiperSlide key={index}>
               <div
-                className=' text-center shadow-lg p-5 
-           bg-pink-100 mx-5 md:mx-0  rounded-xl  text-black items-center justify-between'
+                className='text-center shadow-lg p-5 bg-pink-100 mx-5 md:mx-0 rounded-xl text-black items-center justify-between'
               >
                 <img
                   src={item.icon}
                   alt='service1'
-                  className=' mx-auto rounded-md'
+                  className='mx-auto rounded-md'
                 />
-
                 <p className='text-xl font-bold py-5'>{item.service}</p>
               </div>
             </SwiperSlide>
