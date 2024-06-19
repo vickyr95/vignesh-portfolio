@@ -52,8 +52,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     <nav className='md:fixed top-0 py-4 px-10 md:px-5 lg:px-20 mb-0 md:mb-7 w-full dark:text-white text-black z-50'>
       <div className={`flex justify-between items-center border-b rounded-md shadow-md dark:shadow-md dark:border-none bg-blend-overlay md:bg-gradient-to-r from-green-50 to-amber-50 dark:bg-black z-50`}>
         <div className='flex justify-between items-center md:w-9/12 lg:w-11/12'>
-          <div>
-            <img src={initial} alt='initial-vr' className='w-10 h-10 ml-4 ' />
+          <div className='nav text-md text-3xl font-bold font-AgustinaRegular ml-4'>
+              &lt;Vignesh Rajendran /&gt;
           </div>
           <div className='hidden md:flex space-x-5 font-poppins dark:text-white'>
             {navItems.map((item) => (
@@ -140,5 +140,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     </nav>
   );
 };
+
 
 export default Navbar;

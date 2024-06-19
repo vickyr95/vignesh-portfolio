@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        light: 'url("/src/assets/images/wb_bg.jpg")', // light mode background image
+        // light: 'url("/src/assets/images/wb_bg.jpg")', // light mode background image
+        light: '#EDF9FE', 
         dark: 'url("/src/assets/images/banner-bg.png")', // dark mode background image
         contact_light: 'url("/src/assets/images/illustration-dark.svg")',
         contact_dark: 'url("/src/assets/images/contact-img.svg")',
@@ -14,6 +15,7 @@ module.exports = {
 
       fontFamily: {
         burtons: ['burtons', 'sans-serif'],
+        AgustinaRegular: ['AgustinaRegular', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
         klee_one: ['klee-one', 'cursive'],
         cursive: 'cursive',

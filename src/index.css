@@ -49,3 +49,9 @@ code {
   font-family: 'centrano2-book';
   src: url('./assets/fonts/CentraNo2-Book.ttf');
 }
+@font-face {
+  font-family: "AgustinaRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Agustina.woff") format("woff");
+}

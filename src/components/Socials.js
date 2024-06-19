@@ -5,7 +5,7 @@ const socials = [
   //vickyr95.github.io
   {
     name: 'linkedIn',
-    link: 'https://www.linkedin.com/in/vicky-rajendran?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    link: 'https://www.linkedin.com/in/vicky-rajendran',
     icon: <RiLinkedinFill />,
   },
 

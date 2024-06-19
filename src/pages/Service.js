@@ -15,15 +15,24 @@ const Service = ({ BG }) => {
       className={`!darkMode ? '' : ${BG} bg-right-bottom lg:min-h-screen w-screen lg:mt-0 px-2 md:px-20 py-10 md:py-5 lg:py-20 dark:text-gray-200`}
     >
       <div>
-        <h3 className='text-3xl lg:pb-5 mt-5 md:mt-0 text-center font-bold tracking-widest'>
-          SERVICES OFFERED
-        </h3>
+      <h3 className=' text-2xl lg:pb-5 mt-5 md:mt-0 text-center font-bold tracking-widest'>
+        <span className='text-xl line-through'>
+        WHAT CAN I OFFER
+          </span> 
+          &nbsp;
+          &nbsp;
+        <span className='text-2xl text-center font-bold bg-gradient-to-r from-fuchsia-700 via-pink-900 to-indigo-950 dark:text-orange-200  bg-clip-text text-transparent  py-2'>
+          WHAT CAN WE OFFER
+        </span>
+      </h3>
 
-        <p
-          className='text-md md:text-xl font-burtons bg-gradient-to-r from-blue-900 via-pink-950 to-amber-500 
-         bg-clip-text text-transparent leading-8 px-7 md:px-0 py-2 text-center tracking-widest dark:text-gray-200'
-        >
-          offering a comprehensive range of services, my team and i specialize in
+      
+
+
+        <p className='text-2xl leading-10 px-2 py-4 text-gray-800 dark:text-gray-100 text-center'>
+          My friends and I specialize in various sub-domains of robotics development, both hardware and software.
+          <br></br>
+          This allows us to offer a wide range of services, including:
         </p>
       </div>
       <Swiper

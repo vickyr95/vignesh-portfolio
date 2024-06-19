@@ -5,16 +5,16 @@ import ADAS from '../assets/project-images/car.png';
 import agriMobile from '../assets/project-images/agriMobile.jpg';
 import golfBallLocation from '../assets/project-images/golf.png';
 
-import ROS2 from '../assets/service-images/ROS2.png';
-import mobilerobot from '../assets/service-images/mobile-robot-dev.jpeg';
+import ROS2 from '../assets/service-images/ROS2.jpg';
+import mobilerobot from '../assets/service-images/mobile-robot-dev.jpg';
 import AIDeepLearning from '../assets/service-images/Town-Centre-video-sample-frame-Right-Yolact-result-Left-Mask-R-CNN-result_Q320.jpg';
-import computerVS from '../assets/service-images/gramener-computer-vision-solutions.webp';
-import EHSFD from '../assets/service-images/640652c3ecec070a76f32338_embedded-systems.webp';
-import apps from '../assets/service-images/ios&android.png';
-import drone from '../assets/service-images/drone.png';
-import consult from '../assets/service-images/consulting.png';
+import computerVS from '../assets/service-images/gramener-computer-vision-solutions.jpg';
+import EHSFD from '../assets/service-images/640652c3ecec070a76f32338_embedded-systems.jpg';
+import apps from '../assets/service-images/ios&android.jpg';
+import drone from '../assets/service-images/drone.jpg';
+import consult from '../assets/service-images/consulting.jpg';
 // import code from '../assets/service-images/code.png';
-import industrialRobotics from '../assets/service-images/industrial-robotics.png';
+import industrialRobotics from '../assets/service-images/industrial-robotics.jpg';
 
 import { MdOutlineEngineering } from 'react-icons/md';
 import { SiFreelancer } from 'react-icons/si';
