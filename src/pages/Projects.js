@@ -32,9 +32,9 @@ const Projects = ({ darkMode, bgLight }) => {
       <div className=' flex flex-col items-center mx-auto  '>
         {/* Head Section */}
         <div className=' flex flex-col gap-4 items-center justify-center max-w-35rem mx-auto  '>
-        <h3 className=' text-2xl  lg:pb-10  text-center  font-bold tracking-widest'>
-        PROJECTS
-      </h3>
+          <h3 className=' text-2xl  lg:pb-10  text-center  font-bold tracking-widest'>
+            RECENT WORKS
+          </h3>
           {/* <span className=' text-black dark:text-gray-200 text-xl text-center mx-5 font-semibold '>
             Embark on a journey of innovation and efficiency with our latest
             robotics engineering projects.
@@ -154,7 +154,7 @@ const Projects = ({ darkMode, bgLight }) => {
               </span>
             </div>
           </motion.div>
-          
+
           <motion.div
             variants={slideIn('left', 'tween', 0.2, 1)}
             initial='initial'

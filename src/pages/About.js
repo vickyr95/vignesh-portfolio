@@ -1,7 +1,7 @@
 import React from 'react';
 import s1 from '../assets/images/about_bg.gif';
 // import Skills from '../components/Skills';
-import Experience from '../components/Experience';
+// import Experience from '../components/Experience';
 
 const About = ({ darkMode }) => {
   return (
@@ -34,27 +34,26 @@ const About = ({ darkMode }) => {
                 <div className='absolute -bottom-8 md:left-60 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000'></div>
               </div>
             ) : null}
-            <p className='text-left py-2 text-lg leading-10'>
-              With extensive experience as a robotics engineer and product
-              manager, I excel in steering projects from ideation to execution,
-              thriving in startup environments. My roles encompass economic
-              problem-solving, POC planning, parts selection, procurement
-              negotiations, and project management.
+            <p className='text-xl text-left py-2 text-lg leading-10'>
+              With extensive experience as a robotics engineer and product manager, I excel in steering projects from ideation to execution,
+              thriving in startup environments. 
               <br />
               <br />
-              While I acknowledge continuous learning, my commitment to growth
-              ensures I acquire necessary skills. I approach challenges with
-              humility and optimism, delivering commercially viable products
-              through iterative upgrades. Eager to contribute my proven track
-              record and collaborative spirit to your projects for mutual
-              success.
+              My roles encompass economic problem-solving, POC planning, parts selection, procurement negotiations, and project management.
+              <br />
+              <br />
+              While I acknowledge continuous learning, my commitment to growth ensures I acquire necessary skills. I approach challenges with
+              humility and optimism, delivering commercially viable products through iterative upgrades. 
+              <br />
+              <br />
+              Eager to contribute my proven track record and collaborative spirit to your projects for mutual success.
             </p>
           </div>
         </div>
         {/* ---Skills---- */}
         {/* <Skills /> */}
         {/* ---Experience---- */}
-        <Experience />
+        {/* <Experience /> */}
       </div>
     </div>
   );

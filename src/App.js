@@ -3,6 +3,7 @@ import './App.css';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
 import AllProjects from './pages/AllProjects';
+import MyExperience from './pages/experience';
 import OverAllPage from './pages/OverAllPage';
 import { AnimatePresence } from 'framer-motion';
 function App() {
@@ -19,9 +20,8 @@ function App() {
   return (
     <div className={`${darkMode ? 'dark' : ''} overflow-x-hidden`}>
       <main
-        className={` ${
-          location.pathname === '/' ? `dark:bg-black ${bgLight}` : ''
-        }  text-black dark:text-gray-200 
+        className={` ${location.pathname === '/' ? `dark:bg-black ${bgLight}` : ''
+          }  text-black dark:text-gray-200 
          bg-cover  bg-bottom  px-0 lg:px-0 w-screen md:w-screen overflow-x-hidden`}
       >
         <AnimatePresence initial={false}>
@@ -38,6 +38,7 @@ function App() {
               }
             />
             <Route path='/projects' element={<AllProjects />} />
+            <Route path='/experience' element={<MyExperience />} />
           </Routes>
         </AnimatePresence>
       </main>

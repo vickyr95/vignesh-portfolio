@@ -1,10 +1,9 @@
 import React from 'react';
-import ProjectCard from '../components/ProjectCard';
-import { projectsData } from '../utils/data';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import Experience from '../components/Experience';
+import { Link } from 'react-router-dom';
 
-const AllProjects = () => {
+const EXP = ({ darkMode }) => {
   return (
     <motion.div
       className='min-h-screen py-10  md:mx-auto dark:bg-black dark:text-gray-300'
@@ -19,22 +18,14 @@ const AllProjects = () => {
               Home
             </Link>
           </span>
-          <span className=' text-black dark:text-gray-300 text-3xl font-bold capitalize'>
-            Recent Works
-          </span>
-          <div></div>
         </div>
+        <div className='mt-20'>
 
-        <div className='container   md:mx-10  px-10  my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-          {projectsData.map((project, index) => (
-            <div key={index} className=' '>
-              <ProjectCard {...project} />
-            </div>
-          ))}
+          <Experience />
         </div>
       </div>
     </motion.div>
   );
 };
 
-export default AllProjects;
+export default EXP;

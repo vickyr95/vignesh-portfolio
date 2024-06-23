@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 
-import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 const Service = ({ BG }) => {
   return (
@@ -15,18 +15,18 @@ const Service = ({ BG }) => {
       className={`!darkMode ? '' : ${BG} bg-right-bottom lg:min-h-screen w-screen lg:mt-0 px-2 md:px-20 py-10 md:py-5 lg:py-20 dark:text-gray-200`}
     >
       <div>
-      <h3 className=' text-2xl lg:pb-5 mt-5 md:mt-0 text-center font-bold tracking-widest'>
-        <span className='text-xl line-through'>
-        WHAT CAN I OFFER
-          </span> 
+        <h3 className=' text-2xl lg:pb-5 mt-5 md:mt-0 text-center font-bold tracking-widest'>
+          <span className='text-xl line-through'>
+            WHAT CAN I OFFER
+          </span>
           &nbsp;
           &nbsp;
-        <span className='text-2xl text-center font-bold bg-gradient-to-r from-fuchsia-700 via-pink-900 to-indigo-950 dark:text-orange-200  bg-clip-text text-transparent  py-2'>
-          WHAT CAN WE OFFER
-        </span>
-      </h3>
+          <span className='text-2xl text-center font-bold bg-gradient-to-r from-fuchsia-700 via-pink-900 to-indigo-950 dark:text-orange-200  bg-clip-text text-transparent  py-2'>
+            WHAT CAN WE OFFER
+          </span>
+        </h3>
 
-      
+
 
 
         <p className='text-2xl leading-10 px-2 py-4 text-gray-800 dark:text-gray-100 text-center'>
